@@ -1,0 +1,161 @@
+[1/68] Building C object third_party/libdeflate126/CMakeFiles/libdeflate_static.dir/lib/arm/cpu_features.c.obj
+In file included from <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/arm/cpu_features.c:39:
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/arm/../cpu_features_common.h:86:39: warning: unused parameter 'features' [-Wunused-parameter]
+   86 | disable_cpu_features_for_testing(u32 *features,
+      |                                       ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/arm/../cpu_features_common.h:87:32: warning: unused parameter 'feature_table' [-Wunused-parameter]
+   87 |                                  const struct cpu_feature *feature_table,
+      |                                                            ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/arm/../cpu_features_common.h:88:13: warning: unused parameter 'feature_table_length' [-Wunused-parameter]
+   88 |                                  size_t feature_table_length)
+      |                                         ^
+3 warnings generated.
+[2/68] Building C object third_party/libdeflate126/CMakeFiles/libdeflate_static.dir/lib/utils.c.obj
+[3/68] Building C object third_party/libdeflate126/CMakeFiles/libdeflate_static.dir/lib/x86/cpu_features.c.obj
+In file included from <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/x86/cpu_features.c:28:
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/x86/../cpu_features_common.h:86:39: warning: unused parameter 'features' [-Wunused-parameter]
+   86 | disable_cpu_features_for_testing(u32 *features,
+      |                                       ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/x86/../cpu_features_common.h:87:32: warning: unused parameter 'feature_table' [-Wunused-parameter]
+   87 |                                  const struct cpu_feature *feature_table,
+      |                                                            ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/x86/../cpu_features_common.h:88:13: warning: unused parameter 'feature_table_length' [-Wunused-parameter]
+   88 |                                  size_t feature_table_length)
+      |                                         ^
+3 warnings generated.
+[4/68] Building C object third_party/libdeflate126/CMakeFiles/libdeflate_static.dir/lib/adler32.c.obj
+[5/68] Building C object third_party/libdeflate126/CMakeFiles/libdeflate_static.dir/lib/zlib_compress.c.obj
+[6/68] Building C object third_party/libdeflate126/CMakeFiles/libdeflate_static.dir/lib/deflate_decompress.c.obj
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/deflate_decompress.c:1029:41: warning: unused parameter 'num_offset_syms' [-Wunused-parameter]
+ 1029 |                           unsigned num_litlen_syms, unsigned num_offset_syms)
+      |                                                              ^
+In file included from <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/deflate_decompress.c:1082:
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/decompress_template.h:77:2: warning: comparison of integers of different signs: '__ptrdiff_t' (aka 'long long') and '__size_t' (aka 'unsigned long long') [-Wsign-compare]
+   77 |         REFILL_BITS();
+      |         ^~~~~~~~~~~~~
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/deflate_decompress.c:239:30: note: expanded from macro 'REFILL_BITS'
+  239 |             likely(in_end - in_next >= sizeof(bitbuf_t))) {             \
+      |                    ~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~~
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/../common_defs.h:217:45: note: expanded from macro 'likely'
+  217 | #  define likely(expr)          __builtin_expect(!!(expr), 1)
+      |                                                     ^~~~
+In file included from <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/deflate_decompress.c:1082:
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/decompress_template.h:123:4: warning: comparison of integers of different signs: '__ptrdiff_t' (aka 'long long') and '__size_t' (aka 'unsigned long long') [-Wsign-compare]
+  123 |                         REFILL_BITS();
+      |                         ^~~~~~~~~~~~~
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/deflate_decompress.c:239:30: note: expanded from macro 'REFILL_BITS'
+  239 |             likely(in_end - in_next >= sizeof(bitbuf_t))) {             \
+      |                    ~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~~
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/../common_defs.h:217:45: note: expanded from macro 'likely'
+  217 | #  define likely(expr)          __builtin_expect(!!(expr), 1)
+      |                                                     ^~~~
+In file included from <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/deflate_decompress.c:1082:
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/decompress_template.h:158:5: warning: comparison of integers of different signs: '__ptrdiff_t' (aka 'long long') and '__size_t' (aka 'unsigned long long') [-Wsign-compare]
+  158 |                                 REFILL_BITS();
+      |                                 ^~~~~~~~~~~~~
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/deflate_decompress.c:239:30: note: expanded from macro 'REFILL_BITS'
+  239 |             likely(in_end - in_next >= sizeof(bitbuf_t))) {             \
+      |                    ~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~~
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/../common_defs.h:217:45: note: expanded from macro 'likely'
+  217 | #  define likely(expr)          __builtin_expect(!!(expr), 1)
+      |                                                     ^~~~
+In file included from <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/deflate_decompress.c:1082:
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/decompress_template.h:686:3: warning: comparison of integers of different signs: '__ptrdiff_t' (aka 'long long') and '__size_t' (aka 'unsigned long long') [-Wsign-compare]
+  686 |                 REFILL_BITS();
+      |                 ^~~~~~~~~~~~~
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/deflate_decompress.c:239:30: note: expanded from macro 'REFILL_BITS'
+  239 |             likely(in_end - in_next >= sizeof(bitbuf_t))) {             \
+      |                    ~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~~
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/../common_defs.h:217:45: note: expanded from macro 'likely'
+  217 | #  define likely(expr)          __builtin_expect(!!(expr), 1)
+      |                                                     ^~~~
+In file included from <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/deflate_decompress.c:1088:
+In file included from <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/x86/decompress_impl.h:39:
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/decompress_template.h:77:2: warning: comparison of integers of different signs: '__ptrdiff_t' (aka 'long long') and '__size_t' (aka 'unsigned long long') [-Wsign-compare]
+   77 |         REFILL_BITS();
+      |         ^~~~~~~~~~~~~
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/deflate_decompress.c:239:30: note: expanded from macro 'REFILL_BITS'
+  239 |             likely(in_end - in_next >= sizeof(bitbuf_t))) {             \
+      |                    ~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~~
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/../common_defs.h:217:45: note: expanded from macro 'likely'
+  217 | #  define likely(expr)          __builtin_expect(!!(expr), 1)
+      |                                                     ^~~~
+In file included from <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/deflate_decompress.c:1088:
+In file included from <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/x86/decompress_impl.h:39:
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/decompress_template.h:123:4: warning: comparison of integers of different signs: '__ptrdiff_t' (aka 'long long') and '__size_t' (aka 'unsigned long long') [-Wsign-compare]
+  123 |                         REFILL_BITS();
+      |                         ^~~~~~~~~~~~~
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/deflate_decompress.c:239:30: note: expanded from macro 'REFILL_BITS'
+  239 |             likely(in_end - in_next >= sizeof(bitbuf_t))) {             \
+      |                    ~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~~
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/../common_defs.h:217:45: note: expanded from macro 'likely'
+  217 | #  define likely(expr)          __builtin_expect(!!(expr), 1)
+      |                                                     ^~~~
+In file included from <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/deflate_decompress.c:1088:
+In file included from <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/x86/decompress_impl.h:39:
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/decompress_template.h:158:5: warning: comparison of integers of different signs: '__ptrdiff_t' (aka 'long long') and '__size_t' (aka 'unsigned long long') [-Wsign-compare]
+  158 |                                 REFILL_BITS();
+      |                                 ^~~~~~~~~~~~~
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/deflate_decompress.c:239:30: note: expanded from macro 'REFILL_BITS'
+  239 |             likely(in_end - in_next >= sizeof(bitbuf_t))) {             \
+      |                    ~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~~
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/../common_defs.h:217:45: note: expanded from macro 'likely'
+  217 | #  define likely(expr)          __builtin_expect(!!(expr), 1)
+      |                                                     ^~~~
+In file included from <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/deflate_decompress.c:1088:
+In file included from <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/x86/decompress_impl.h:39:
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/decompress_template.h:686:3: warning: comparison of integers of different signs: '__ptrdiff_t' (aka 'long long') and '__size_t' (aka 'unsigned long long') [-Wsign-compare]
+  686 |                 REFILL_BITS();
+      |                 ^~~~~~~~~~~~~
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/deflate_decompress.c:239:30: note: expanded from macro 'REFILL_BITS'
+  239 |             likely(in_end - in_next >= sizeof(bitbuf_t))) {             \
+      |                    ~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~~
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/../common_defs.h:217:45: note: expanded from macro 'likely'
+  217 | #  define likely(expr)          __builtin_expect(!!(expr), 1)
+      |                                                     ^~~~
+9 warnings generated.
+[7/68] Building C object third_party/libdeflate126/CMakeFiles/libdeflate_static.dir/lib/zlib_decompress.c.obj
+[8/68] Building C object third_party/libdeflate126/CMakeFiles/libdeflate_static.dir/lib/gzip_compress.c.obj
+[9/68] Building C object third_party/libdeflate126/CMakeFiles/libdeflate_static.dir/lib/deflate_compress.c.obj
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/deflate_compress.c:1836:30: warning: comparison of integers of different signs: '__ptrdiff_t' (aka 'long long') and 'size_t' (aka 'unsigned long long') [-Wsign-compare]
+ 1836 |                         ASSERT(os->end - out_next >=
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+ 1837 |                                DIV_ROUND_UP(bitcount + 3, 8) + 4 + len);
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/lib_common.h:99:29: note: expanded from macro 'ASSERT'
+   99 | #define ASSERT(expr) (void)(expr)
+      |                             ^~~~
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/deflate_compress.c:2384:30: warning: comparison of integers of different signs: '__ptrdiff_t' (aka 'long long') and 'size_t' (aka 'unsigned long long') [-Wsign-compare]
+ 2384 |         if (in_end - in_block_begin < soft_max_len + MIN_BLOCK_LENGTH)
+      |             ~~~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/deflate_compress.c:2424:26: warning: comparison of integers of different signs: '__ptrdiff_t' (aka 'long long') and 'size_t' (aka 'unsigned long long') [-Wsign-compare]
+ 2424 |                 if (out_end - out_next < 5 + len)
+      |                     ~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126/lib/deflate_compress.c:4088:65: warning: unused parameter 'c' [-Wunused-parameter]
+ 4088 | libdeflate_deflate_compress_bound(struct libdeflate_compressor *c,
+      |                                                                 ^
+4 warnings generated.
+[10/68] Building C object third_party/libdeflate126/CMakeFiles/libdeflate_static.dir/lib/gzip_decompress.c.obj
+[11/68] Building C object third_party/zlib132/CMakeFiles/zlibstatic.dir/adler32.c.obj
+[12/68] Building C object third_party/zlib132/CMakeFiles/zlibstatic.dir/compress.c.obj
+[13/68] Building C object third_party/libdeflate126/CMakeFiles/libdeflate_static.dir/lib/crc32.c.obj
+[14/68] Building C object third_party/zlib132/CMakeFiles/zlibstatic.dir/crc32.c.obj
+[15/68] Building C object third_party/zlib132/CMakeFiles/zlibstatic.dir/gzclose.c.obj
+[16/68] Building C object third_party/zlib132/CMakeFiles/zlibstatic.dir/deflate.c.obj
+[17/68] Building C object third_party/zlib132/CMakeFiles/zlibstatic.dir/gzlib.c.obj
+[18/68] Building C object third_party/zlib132/CMakeFiles/zlibstatic.dir/gzread.c.obj
+[19/68] Building C object third_party/zlib132/CMakeFiles/zlibstatic.dir/gzwrite.c.obj
+[20/68] Building C object third_party/zlib132/CMakeFiles/zlibstatic.dir/infback.c.obj
+[21/68] Building C object third_party/zlib132/CMakeFiles/zlibstatic.dir/inftrees.c.obj
+[22/68] Building C object third_party/zlib132/CMakeFiles/zlibstatic.dir/inffast.c.obj
+[23/68] Building C object third_party/zlib132/CMakeFiles/zlibstatic.dir/inflate.c.obj
+[24/68] Building C object third_party/zlib132/CMakeFiles/zlibstatic.dir/uncompr.c.obj
+[25/68] Linking CXX static library libhx_core.a
+FAILED: [code=1] libhx_core.a 
+C:\WINDOWS\system32\cmd.exe /C "cd . && <WORKSPACE>\work\tools\cmake\cmake-4.1.0-windows-x86_64\bin\cmake.exe -E rm -f libhx_core.a && CMAKE_AR-NOTFOUND qc libhx_core.a  CMakeFiles/hx_core.dir/src/core/crc32.cpp.obj CMakeFiles/hx_core.dir/src/core/dirplan.cpp.obj CMakeFiles/hx_core.dir/src/core/pathguard.cpp.obj CMakeFiles/hx_core.dir/src/core/stats.cpp.obj && cd ."
+'CMAKE_AR-NOTFOUND' is not recognized as an internal or external command,
+operable program or batch file.
+[26/68] Building C object third_party/zlib132/CMakeFiles/zlibstatic.dir/trees.c.obj
+[27/68] Building C object third_party/zlib132/CMakeFiles/zlibstatic.dir/zutil.c.obj
+[28/68] Building CXX object CMakeFiles/hx_output.dir/src/core/output/win32_sink.cpp.obj
+ninja: build stopped: subcommand failed.

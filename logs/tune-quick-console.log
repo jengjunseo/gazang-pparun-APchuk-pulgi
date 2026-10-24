@@ -1,0 +1,28 @@
+HYPER EXTRACT ZIP end-to-end AutoTune (Defender and OS settings unchanged)
+Data: synthetic quick dataset, no personal files read.
+[ 1] W8 K4: 1340.37 ms [verified]
+[ 2] W2 K4: 1931.75 ms [verified]
+[ 3] W8 K0: 2446.12 ms [verified]
+[ 4] W1 K0: 2335.70 ms [verified]
+[ 5] W4 K4: 2309.32 ms [verified]
+[ 6] W4 K0: 1953.88 ms [verified]
+[ 7] W2 K0: 2185.94 ms [verified]
+[ 8] W1 K4: 2497.12 ms [verified]
+[ 9] W4 K4: 2482.47 ms [verified]
+[10] W2 K4: 2301.34 ms [verified]
+[11] W2 K0: 1796.44 ms [verified]
+[12] W1 K0: 2697.64 ms [verified]
+[13] W1 K4: 2536.06 ms [verified]
+[14] W8 K4: 1260.89 ms [verified]
+[15] W4 K0: 4082.25 ms [verified]
+[16] W8 K0: 1051.47 ms [verified]
+[17] W1 K0: 871.50 ms [verified]
+[18] W8 K4: 762.72 ms [verified]
+[19] W1 K4: 2565.80 ms [verified]
+[20] W2 K4: 1915.77 ms [verified]
+[21] W2 K0: 1829.10 ms [verified]
+[22] W4 K0: 1158.13 ms [verified]
+[23] W8 K0: 1354.39 ms [verified]
+[24] W4 K4: 1993.69 ms [verified]
+Selected W8 K4 (fastest W8 K4). Profile saved in LocalAppData/HyperExtract.
+Results are in the zip-tune-* folder inside LocalAppData/HyperExtract.

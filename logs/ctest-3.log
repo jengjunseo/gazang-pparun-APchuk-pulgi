@@ -1,0 +1,87 @@
+Test project <BUILD>
+    Start 1: core
+1/7 Test #1: core .............................   Passed    0.06 sec
+    Start 2: pathguard_prop
+2/7 Test #2: pathguard_prop ...................   Passed    0.24 sec
+    Start 3: zip
+3/7 Test #3: zip ..............................   Passed    0.05 sec
+    Start 4: zip_mutation
+4/7 Test #4: zip_mutation .....................   Passed    0.06 sec
+    Start 5: zip_writer
+5/7 Test #5: zip_writer .......................   Passed    0.07 sec
+    Start 6: zip_security
+6/7 Test #6: zip_security .....................   Passed    0.06 sec
+    Start 7: windows_selftest
+7/7 Test #7: windows_selftest .................***Failed    4.07 sec
+HYPER EXTRACT selftest
+  sink contract, closers=0
+  FAIL <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/tools/selftest_win.cpp:77: mutation==((HANDLE) (LONG_PTR)-1) 
+  FAIL <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/tools/selftest_win.cpp:79: !MoveFileExW(protected_dir.c_str(),(protected_dir+L"-replaced").c_str(),0) 
+  FAIL <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/tools/selftest_win.cpp:96: t1.ok() 
+  FAIL <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/tools/selftest_win.cpp:97: sink.write(t1.value, bytes("abc")).ok() 
+  FAIL <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/tools/selftest_win.cpp:98: sink.finish(std::move(t1.value), ents[1], true).ok() 
+  FAIL <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/tools/selftest_win.cpp:123: s.files_finished_ok == 2 
+  FAIL <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/tools/selftest_win.cpp:125: s.closes_done == 5 
+  FAIL <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/tools/selftest_win.cpp:129: read_all(pathof(1)) == "abc" 
+  FAIL <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/tools/selftest_win.cpp:142: RemoveDirectoryW((L"\\\\?\\" + root).c_str()) 
+  sink contract, closers=3
+  FAIL <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/tools/selftest_win.cpp:77: mutation==((HANDLE) (LONG_PTR)-1) 
+  FAIL <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/tools/selftest_win.cpp:79: !MoveFileExW(protected_dir.c_str(),(protected_dir+L"-replaced").c_str(),0) 
+  FAIL <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/tools/selftest_win.cpp:96: t1.ok() 
+  FAIL <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/tools/selftest_win.cpp:97: sink.write(t1.value, bytes("abc")).ok() 
+  FAIL <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/tools/selftest_win.cpp:98: sink.finish(std::move(t1.value), ents[1], true).ok() 
+  FAIL <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/tools/selftest_win.cpp:123: s.files_finished_ok == 2 
+  FAIL <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/tools/selftest_win.cpp:125: s.closes_done == 5 
+  FAIL <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/tools/selftest_win.cpp:129: read_all(pathof(1)) == "abc" 
+  FAIL <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/tools/selftest_win.cpp:142: RemoveDirectoryW((L"\\\\?\\" + root).c_str()) 
+  trial smoke (small synthetic datasets)
+    A-synth-mini W4-K0-planned       554.7 ms ok
+    A-synth-mini W4-K0-lazy          335.9 ms ok
+    A-synth-mini W4-K4-planned       312.9 ms ok
+    A-synth-mini W4-K4-lazy          332.0 ms ok
+    D-synth-mini W4-K0-planned       479.6 ms ok
+    D-synth-mini W4-K0-lazy          279.6 ms ok
+    D-synth-mini W4-K4-planned       272.9 ms ok
+    D-synth-mini W4-K4-lazy          310.3 ms ok
+  note: selftest folder not empty, left at <BUILD>\selftest-data\hx-selftest-20261024-202137
+[selftest-win] 108 checks, 18 failures -> FAIL
+PASS create golden ZIP
+PASS list metadata
+PASS decode-to-null with CRC/size checks
+PASS transactional ZIP W/K extraction
+PASS Korean filename and complete content
+PASS existing output rejected
+PASS transactional ZIP W/K extraction
+PASS Korean filename and complete content
+PASS existing output rejected
+PASS transactional ZIP W/K extraction
+PASS Korean filename and complete content
+PASS existing output rejected
+PASS transactional ZIP W/K extraction
+PASS Korean filename and complete content
+PASS existing output rejected
+PASS transactional ZIP W/K extraction
+PASS Korean filename and complete content
+PASS existing output rejected
+PASS transactional ZIP W/K extraction
+PASS Korean filename and complete content
+PASS existing output rejected
+PASS cancelled extraction status
+PASS cancelled output not published
+PASS create streaming cancellation source
+PASS cancel after streaming bytes were written
+PASS mid-stream rollback
+PASS create traversal fixture
+PASS reject traversal
+PASS no path escape or final output
+PASS clean owned selftest session
+Archive selftest: 30 checks, total failures including sink tests=1
+
+
+86% tests passed, 1 tests failed out of 7
+
+Total Test time (real) =   4.88 sec
+
+The following tests FAILED:
+	  7 - windows_selftest (Failed)
+Errors while running CTest

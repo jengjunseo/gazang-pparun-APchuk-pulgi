@@ -1,0 +1,9 @@
+[1/41] Linking CXX static library libhx_core.a
+FAILED: [code=1] libhx_core.a 
+C:\WINDOWS\system32\cmd.exe /C "cd . && <WORKSPACE>\work\tools\cmake\cmake-4.1.0-windows-x86_64\bin\cmake.exe -E rm -f libhx_core.a && CMAKE_AR-NOTFOUND qc libhx_core.a  CMakeFiles/hx_core.dir/src/core/crc32.cpp.obj CMakeFiles/hx_core.dir/src/core/dirplan.cpp.obj CMakeFiles/hx_core.dir/src/core/pathguard.cpp.obj CMakeFiles/hx_core.dir/src/core/stats.cpp.obj && cd ."
+'CMAKE_AR-NOTFOUND' is not recognized as an internal or external command,
+operable program or batch file.
+[2/41] Building CXX object CMakeFiles/hx_zip.dir/src/core/zip/zip_decoder.cpp.obj
+[3/41] Building CXX object CMakeFiles/hx_zip.dir/src/core/zip/zip_writer.cpp.obj
+[4/41] Building CXX object CMakeFiles/hx_zip.dir/src/core/zip/zip_archive.cpp.obj
+ninja: build stopped: subcommand failed.

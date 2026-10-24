@@ -1,0 +1,743 @@
+[
+  {
+    "args": [
+      "--help"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 3364.8599999723956,
+    "stdout": "HYPER EXTRACT 0.7.0 — Windows x64\r\n  hx.exe x archive.zip|7z|rar -o NEW_DIRECTORY\r\n  hx.exe list archive  /  hx.exe test archive\r\n  hx.exe selftest  /  hx.exe tune --quick|--full\r\n  hx.exe --version | --help\r\n옵션: --workers 1..8 --closers 0..16 --codepage 949|437|65001\r\n      --batch-files 16..64 --batch-mib 1..4 --stream-mib 16|64|256\r\n      --no-profile --keep-partial\r\n기존 출력 폴더를 덮어쓰지 않습니다. 암호·다중 볼륨·링크는 지원하지 않습니다.\r\nCtrl+C: 취소. 종료 코드: 0 성공 / 2 인수 / 3 미지원 / 4 손상 / 5 I/O / 6 취소 / 7 경로·한도 / 8 내부 오류\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "--version"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 25.01230000052601,
+    "stdout": "HYPER EXTRACT 0.7.0 Windows x64; libdeflate 1.26; zlib 1.3.2; 7-Zip 26.05\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "selftest"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 33835.13889997266,
+    "stdout": "HYPER EXTRACT selftest\r\n  sink contract, closers=0\r\n  sink contract, closers=3\r\n  trial smoke (small synthetic datasets)\r\n    A-synth-mini W4-K0-planned       692.8 ms ok\r\n    A-synth-mini W4-K0-lazy         1447.0 ms ok\r\n    A-synth-mini W4-K4-planned       803.2 ms ok\r\n    A-synth-mini W4-K4-lazy          887.1 ms ok\r\n    D-synth-mini W4-K0-planned       459.0 ms ok\r\n    D-synth-mini W4-K0-lazy         2845.5 ms ok\r\n    D-synth-mini W4-K4-planned      1994.1 ms ok\r\n    D-synth-mini W4-K4-lazy         2529.0 ms ok\r\n[selftest-win] 108 checks, 0 failures -> PASS\r\nPASS create golden ZIP\r\nPASS list metadata\r\nPASS decode-to-null with CRC/size checks\r\nPASS transactional ZIP W/K extraction\r\nPASS Korean filename and complete content\r\nPASS existing output rejected\r\nPASS transactional ZIP W/K extraction\r\nPASS Korean filename and complete content\r\nPASS existing output rejected\r\nPASS transactional ZIP W/K extraction\r\nPASS Korean filename and complete content\r\nPASS existing output rejected\r\nPASS transactional ZIP W/K extraction\r\nPASS Korean filename and complete content\r\nPASS existing output rejected\r\nPASS transactional ZIP W/K extraction\r\nPASS Korean filename and complete content\r\nPASS existing output rejected\r\nPASS transactional ZIP W/K extraction\r\nPASS Korean filename and complete content\r\nPASS existing output rejected\r\nPASS cancelled extraction status\r\nPASS cancelled output not published\r\nPASS create streaming cancellation source\r\nPASS cancel after streaming bytes were written\r\nPASS mid-stream rollback\r\nPASS create traversal fixture\r\nPASS reject traversal\r\nPASS no path escape or final output\r\nPASS clean owned selftest session\r\nArchive selftest: 30 checks, total failures including sink tests=0\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "x"
+    ],
+    "exit_code": 2,
+    "t_process_ms": 24.954100023023784,
+    "stdout": "HYPER EXTRACT 0.7.0 — Windows x64\r\n  hx.exe x archive.zip|7z|rar -o NEW_DIRECTORY\r\n  hx.exe list archive  /  hx.exe test archive\r\n  hx.exe selftest  /  hx.exe tune --quick|--full\r\n  hx.exe --version | --help\r\n옵션: --workers 1..8 --closers 0..16 --codepage 949|437|65001\r\n      --batch-files 16..64 --batch-mib 1..4 --stream-mib 16|64|256\r\n      --no-profile --keep-partial\r\n기존 출력 폴더를 덮어쓰지 않습니다. 암호·다중 볼륨·링크는 지원하지 않습니다.\r\nCtrl+C: 취소. 종료 코드: 0 성공 / 2 인수 / 3 미지원 / 4 손상 / 5 I/O / 6 취소 / 7 경로·한도 / 8 내부 오류\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "x",
+      "mixed.zip",
+      "-o",
+      "out-mixed UTF8 deflate",
+      "--no-profile"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 192.28019996080548,
+    "stdout": "\r\n검증 완료: 203470 bytes, T_call=167.14 ms, T_engine=4.10 ms, W=4 K=4\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "list",
+      "mixed.zip"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 26.461200090125203,
+    "stdout": "          14  ok  한글\\깊은\\자료.txt\r\n           0  ok  zero\r\n      123456  ok  random.bin\r\n       80000  ok  nested\\a.txt\r\n4개 항목\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "test",
+      "mixed.zip"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 29.24089995212853,
+    "stdout": "\r\n검증 완료: 203470 bytes, T_call=0.45 ms, T_engine=0.00 ms, W=4 K=4\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "x",
+      "mixed.zip",
+      "-o",
+      "out-mixed UTF8 deflate"
+    ],
+    "exit_code": 5,
+    "t_process_ms": 26.970600010827184,
+    "stdout": "",
+    "stderr": "\r\n작업 실패: win32(win32=183): output already exists; choose a new folder\r\n"
+  },
+  {
+    "args": [
+      "x",
+      "stored.zip",
+      "-o",
+      "out-stored",
+      "--no-profile"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 35.956299980171025,
+    "stdout": "\r\n검증 완료: 203470 bytes, T_call=9.21 ms, T_engine=3.74 ms, W=4 K=4\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "x",
+      "cp949.zip",
+      "-o",
+      "out-cp949.zip",
+      "--no-profile"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 32.49869996216148,
+    "stdout": "\r\n검증 완료: 13 bytes, T_call=6.08 ms, T_engine=1.16 ms, W=4 K=4\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "x",
+      "descriptor.zip",
+      "-o",
+      "out-descriptor.zip",
+      "--no-profile"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 30.662600067444146,
+    "stdout": "\r\n검증 완료: 300 bytes, T_call=5.75 ms, T_engine=1.13 ms, W=4 K=4\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "x",
+      "zip64_local.zip",
+      "-o",
+      "out-zip64_local.zip",
+      "--no-profile"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 32.216700026765466,
+    "stdout": "\r\n검증 완료: 17 bytes, T_call=5.84 ms, T_engine=1.04 ms, W=4 K=4\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "x",
+      "zip64_eocd.zip",
+      "-o",
+      "out-zip64_eocd.zip",
+      "--no-profile"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 31.68550005648285,
+    "stdout": "\r\n검증 완료: 13 bytes, T_call=5.70 ms, T_engine=1.18 ms, W=4 K=4\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "x",
+      "standard.zip",
+      "-o",
+      "out-standard.zip",
+      "--no-profile"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 343.56149996165186,
+    "stdout": "\r\n검증 완료: 298 bytes, T_call=318.13 ms, T_engine=3.46 ms, W=4 K=4\r\n",
+    "stderr": "\r진행 100.0%  0.0 MiB/s  남은 시간 약 0초   "
+  },
+  {
+    "args": [
+      "x",
+      "collision.zip",
+      "-o",
+      "out-deterministic renamed paths",
+      "--no-profile"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 37.76939993258566,
+    "stdout": "\r\n검증 완료: 22 bytes, T_call=9.99 ms, T_engine=3.49 ms, W=4 K=4\r\n이름 조정: 충돌 1개, Windows 호환 2개. list 명령으로 결과 이름을 확인하세요.\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "x",
+      "unsafe0.zip",
+      "-o",
+      "bad-0"
+    ],
+    "exit_code": 7,
+    "t_process_ms": 34.54059991054237,
+    "stdout": "",
+    "stderr": "\r\n작업 실패: rejected: ZIP contains unsafe path, link or special file; nothing extracted\r\n"
+  },
+  {
+    "args": [
+      "x",
+      "unsafe1.zip",
+      "-o",
+      "bad-1"
+    ],
+    "exit_code": 7,
+    "t_process_ms": 35.26179993059486,
+    "stdout": "",
+    "stderr": "\r\n작업 실패: rejected: ZIP contains unsafe path, link or special file; nothing extracted\r\n"
+  },
+  {
+    "args": [
+      "x",
+      "unsafe2.zip",
+      "-o",
+      "bad-2"
+    ],
+    "exit_code": 7,
+    "t_process_ms": 34.94929999578744,
+    "stdout": "",
+    "stderr": "\r\n작업 실패: rejected: ZIP contains unsafe path, link or special file; nothing extracted\r\n"
+  },
+  {
+    "args": [
+      "x",
+      "unsafe3.zip",
+      "-o",
+      "bad-3"
+    ],
+    "exit_code": 7,
+    "t_process_ms": 36.348899942822754,
+    "stdout": "",
+    "stderr": "\r\n작업 실패: rejected: ZIP contains unsafe path, link or special file; nothing extracted\r\n"
+  },
+  {
+    "args": [
+      "x",
+      "unsafe4.zip",
+      "-o",
+      "bad-4"
+    ],
+    "exit_code": 7,
+    "t_process_ms": 35.99789994768798,
+    "stdout": "",
+    "stderr": "\r\n작업 실패: rejected: ZIP contains unsafe path, link or special file; nothing extracted\r\n"
+  },
+  {
+    "args": [
+      "x",
+      "unsafe5.zip",
+      "-o",
+      "bad-5"
+    ],
+    "exit_code": 7,
+    "t_process_ms": 35.8588999370113,
+    "stdout": "",
+    "stderr": "\r\n작업 실패: rejected: ZIP contains unsafe path, link or special file; nothing extracted\r\n"
+  },
+  {
+    "args": [
+      "x",
+      "link.zip",
+      "-o",
+      "links"
+    ],
+    "exit_code": 7,
+    "t_process_ms": 33.66090008057654,
+    "stdout": "",
+    "stderr": "\r\n작업 실패: rejected: ZIP contains unsafe path, link or special file; nothing extracted\r\n"
+  },
+  {
+    "args": [
+      "x",
+      "CRC corruption.zip",
+      "-o",
+      "out-CRC corruption"
+    ],
+    "exit_code": 4,
+    "t_process_ms": 40.53780005779117,
+    "stdout": "",
+    "stderr": "\r\n작업 실패: verify: libdeflate decode failed/size or input length mismatch\r\n"
+  },
+  {
+    "args": [
+      "x",
+      "truncation.zip",
+      "-o",
+      "out-truncation"
+    ],
+    "exit_code": 4,
+    "t_process_ms": 270.1860999222845,
+    "stdout": "",
+    "stderr": "\r\n작업 실패: verify: zip: end-of-central-directory missing\r\n"
+  },
+  {
+    "args": [
+      "x",
+      "unsupported.zip",
+      "-o",
+      "unsupported"
+    ],
+    "exit_code": 3,
+    "t_process_ms": 27.975500095635653,
+    "stdout": "",
+    "stderr": "\r\n작업 실패: unsupported: unsupported ZIP compression method\r\n"
+  },
+  {
+    "args": [
+      "x",
+      "10104.zip",
+      "-o",
+      "out-10104 files",
+      "--no-profile"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 56829.93200002238,
+    "stdout": "\r\n검증 완료: 12804352 bytes, T_call=56804.74 ms, T_engine=56762.57 ms, W=4 K=4\r\n",
+    "stderr": "\r진행   0.0%  0.0 MiB/s  남은 시간 약 0초   \r진행   0.0%  0.0 MiB/s  남은 시간 약 0초   \r진행   0.7%  0.1 MiB/s  남은 시간 약 106초   \r진행   0.8%  0.1 MiB/s  남은 시간 약 131초   \r진행   2.4%  0.2 MiB/s  남은 시간 약 53초   \r진행   3.9%  0.3 MiB/s  남은 시간 약 39초   \r진행   3.9%  0.3 MiB/s  남은 시간 약 46초   \r진행   4.0%  0.2 MiB/s  남은 시간 약 51초   \r진행   4.1%  0.2 MiB/s  남은 시간 약 56초   \r진행   4.1%  0.2 MiB/s  남은 시간 약 62초   \r진행   4.2%  0.2 MiB/s  남은 시간 약 66초   \r진행   4.3%  0.2 MiB/s  남은 시간 약 70초   \r진행   5.1%  0.2 MiB/s  남은 시간 약 63초   \r진행   7.0%  0.2 MiB/s  남은 시간 약 49초   \r진행   7.7%  0.2 MiB/s  남은 시간 약 47초   \r진행   7.8%  0.2 MiB/s  남은 시간 약 50초   \r진행   7.8%  0.2 MiB/s  남은 시간 약 53초   \r진행   7.8%  0.2 MiB/s  남은 시간 약 56초   \r진행   7.8%  0.2 MiB/s  남은 시간 약 59초   \r진행   7.9%  0.2 MiB/s  남은 시간 약 61초   \r진행   8.0%  0.2 MiB/s  남은 시간 약 63초   \r진행   8.0%  0.2 MiB/s  남은 시간 약 66초   \r진행   8.1%  0.2 MiB/s  남은 시간 약 68초   \r진행   8.2%  0.2 MiB/s  남은 시간 약 70초   \r진행   8.3%  0.2 MiB/s  남은 시간 약 72초   \r진행   8.3%  0.1 MiB/s  남은 시간 약 75초   \r진행   8.3%  0.1 MiB/s  남은 시간 약 78초   \r진행   8.4%  0.1 MiB/s  남은 시간 약 80초   \r진행   8.6%  0.1 MiB/s  남은 시간 약 80초   \r진행   8.6%  0.1 MiB/s  남은 시간 약 83초   \r진행   8.6%  0.1 MiB/s  남은 시간 약 85초   \r진행   9.3%  0.1 MiB/s  남은 시간 약 82초   \r진행   9.7%  0.1 MiB/s  남은 시간 약 80초   \r진행  10.1%  0.1 MiB/s  남은 시간 약 79초   \r진행  11.8%  0.2 MiB/s  남은 시간 약 68초   \r진행  11.9%  0.2 MiB/s  남은 시간 약 70초   \r진행  11.9%  0.2 MiB/s  남은 시간 약 71초   \r진행  11.9%  0.1 MiB/s  남은 시간 약 73초   \r진행  12.1%  0.1 MiB/s  남은 시간 약 74초   \r진행  12.1%  0.1 MiB/s  남은 시간 약 76초   \r진행  12.2%  0.1 MiB/s  남은 시간 약 77초   \r진행  12.5%  0.1 MiB/s  남은 시간 약 76초   \r진행  12.5%  0.1 MiB/s  남은 시간 약 78초   \r진행  12.6%  0.1 MiB/s  남은 시간 약 79초   \r진행  13.0%  0.1 MiB/s  남은 시간 약 78초   \r진행  13.2%  0.1 MiB/s  남은 시간 약 79초   \r진행  13.3%  0.1 MiB/s  남은 시간 약 80초   \r진행  13.6%  0.1 MiB/s  남은 시간 약 79초   \r진행  14.0%  0.1 MiB/s  남은 시간 약 78초   \r진행  14.4%  0.1 MiB/s  남은 시간 약 77초   \r진행  14.4%  0.1 MiB/s  남은 시간 약 78초   \r진행  14.5%  0.1 MiB/s  남은 시간 약 80초   \r진행  15.5%  0.1 MiB/s  남은 시간 약 75초   \r진행  15.6%  0.1 MiB/s  남은 시간 약 76초   \r진행  15.7%  0.1 MiB/s  남은 시간 약 77초   \r진행  15.8%  0.1 MiB/s  남은 시간 약 77초   \r진행  15.9%  0.1 MiB/s  남은 시간 약 78초   \r진행  16.3%  0.1 MiB/s  남은 시간 약 77초   \r진행  16.6%  0.1 MiB/s  남은 시간 약 77초   \r진행  16.7%  0.1 MiB/s  남은 시간 약 78초   \r진행  17.2%  0.1 MiB/s  남은 시간 약 76초   \r진행  18.7%  0.1 MiB/s  남은 시간 약 70초   \r진행  19.7%  0.1 MiB/s  남은 시간 약 67초   \r진행  19.8%  0.1 MiB/s  남은 시간 약 68초   \r진행  19.8%  0.1 MiB/s  남은 시간 약 69초   \r진행  19.8%  0.1 MiB/s  남은 시간 약 70초   \r진행  19.8%  0.1 MiB/s  남은 시간 약 71초   \r진행  20.0%  0.1 MiB/s  남은 시간 약 71초   \r진행  20.0%  0.1 MiB/s  남은 시간 약 72초   \r진행  20.2%  0.1 MiB/s  남은 시간 약 72초   \r진행  20.3%  0.1 MiB/s  남은 시간 약 73초   \r진행  21.1%  0.1 MiB/s  남은 시간 약 70초   \r진행  21.1%  0.1 MiB/s  남은 시간 약 71초   \r진행  21.5%  0.1 MiB/s  남은 시간 약 70초   \r진행  21.9%  0.1 MiB/s  남은 시간 약 70초   \r진행  22.0%  0.1 MiB/s  남은 시간 약 71초   \r진행  22.0%  0.1 MiB/s  남은 시간 약 71초   \r진행  22.5%  0.1 MiB/s  남은 시간 약 70초   \r진행  23.2%  0.1 MiB/s  남은 시간 약 68초   \r진행  23.3%  0.1 MiB/s  남은 시간 약 69초   \r진행  23.4%  0.1 MiB/s  남은 시간 약 69초   \r진행  23.4%  0.1 MiB/s  남은 시간 약 70초   \r진행  23.5%  0.1 MiB/s  남은 시간 약 71초   \r진행  23.5%  0.1 MiB/s  남은 시간 약 72초   \r진행  23.5%  0.1 MiB/s  남은 시간 약 72초   \r진행  23.9%  0.1 MiB/s  남은 시간 약 72초   \r진행  24.1%  0.1 MiB/s  남은 시간 약 72초   \r진행  24.1%  0.1 MiB/s  남은 시간 약 72초   \r진행  25.4%  0.1 MiB/s  남은 시간 약 68초   \r진행  26.6%  0.1 MiB/s  남은 시간 약 65초   \r진행  26.7%  0.1 MiB/s  남은 시간 약 65초   \r진행  26.8%  0.1 MiB/s  남은 시간 약 66초   \r진행  26.9%  0.1 MiB/s  남은 시간 약 66초   \r진행  27.0%  0.1 MiB/s  남은 시간 약 66초   \r진행  27.1%  0.1 MiB/s  남은 시간 약 67초   \r진행  27.2%  0.1 MiB/s  남은 시간 약 67초   \r진행  27.2%  0.1 MiB/s  남은 시간 약 68초   \r진행  27.4%  0.1 MiB/s  남은 시간 약 68초   \r진행  27.4%  0.1 MiB/s  남은 시간 약 69초   \r진행  27.4%  0.1 MiB/s  남은 시간 약 69초   \r진행  27.6%  0.1 MiB/s  남은 시간 약 69초   \r진행  27.8%  0.1 MiB/s  남은 시간 약 69초   \r진행  28.6%  0.1 MiB/s  남은 시간 약 67초   \r진행  28.8%  0.1 MiB/s  남은 시간 약 67초   \r진행  29.6%  0.1 MiB/s  남은 시간 약 65초   \r진행  30.5%  0.1 MiB/s  남은 시간 약 63초   \r진행  31.2%  0.1 MiB/s  남은 시간 약 62초   \r진행  32.8%  0.1 MiB/s  남은 시간 약 58초   \r진행  34.3%  0.1 MiB/s  남은 시간 약 55초   \r진행  35.9%  0.2 MiB/s  남은 시간 약 51초   \r진행  37.0%  0.2 MiB/s  남은 시간 약 50초   \r진행  38.4%  0.2 MiB/s  남은 시간 약 47초   \r진행  39.9%  0.2 MiB/s  남은 시간 약 45초   \r진행  41.6%  0.2 MiB/s  남은 시간 약 42초   \r진행  43.4%  0.2 MiB/s  남은 시간 약 40초   \r진행  45.1%  0.2 MiB/s  남은 시간 약 37초   \r진행  47.0%  0.2 MiB/s  남은 시간 약 35초   \r진행  49.6%  0.2 MiB/s  남은 시간 약 32초   \r진행  51.7%  0.2 MiB/s  남은 시간 약 30초   \r진행  51.8%  0.2 MiB/s  남은 시간 약 30초   \r진행  51.8%  0.2 MiB/s  남은 시간 약 30초   \r진행  51.9%  0.2 MiB/s  남은 시간 약 30초   \r진행  51.9%  0.2 MiB/s  남은 시간 약 30초   \r진행  52.0%  0.2 MiB/s  남은 시간 약 31초   \r진행  52.1%  0.2 MiB/s  남은 시간 약 31초   \r진행  52.1%  0.2 MiB/s  남은 시간 약 31초   \r진행  52.2%  0.2 MiB/s  남은 시간 약 31초   \r진행  52.2%  0.2 MiB/s  남은 시간 약 31초   \r진행  52.4%  0.2 MiB/s  남은 시간 약 31초   \r진행  52.4%  0.2 MiB/s  남은 시간 약 31초   \r진행  53.7%  0.2 MiB/s  남은 시간 약 30초   \r진행  53.7%  0.2 MiB/s  남은 시간 약 30초   \r진행  53.7%  0.2 MiB/s  남은 시간 약 30초   \r진행  53.7%  0.2 MiB/s  남은 시간 약 31초   \r진행  53.8%  0.2 MiB/s  남은 시간 약 31초   \r진행  53.9%  0.2 MiB/s  남은 시간 약 31초   \r진행  54.1%  0.2 MiB/s  남은 시간 약 31초   \r진행  54.1%  0.2 MiB/s  남은 시간 약 31초   \r진행  54.2%  0.2 MiB/s  남은 시간 약 31초   \r진행  55.0%  0.2 MiB/s  남은 시간 약 30초   \r진행  56.5%  0.2 MiB/s  남은 시간 약 29초   \r진행  56.7%  0.2 MiB/s  남은 시간 약 29초   \r진행  56.7%  0.2 MiB/s  남은 시간 약 29초   \r진행  56.9%  0.2 MiB/s  남은 시간 약 29초   \r진행  57.0%  0.2 MiB/s  남은 시간 약 29초   \r진행  57.0%  0.2 MiB/s  남은 시간 약 29초   \r진행  58.1%  0.2 MiB/s  남은 시간 약 28초   \r진행  58.4%  0.2 MiB/s  남은 시간 약 28초   \r진행  58.5%  0.2 MiB/s  남은 시간 약 28초   \r진행  58.6%  0.2 MiB/s  남은 시간 약 28초   \r진행  58.6%  0.2 MiB/s  남은 시간 약 28초   \r진행  58.6%  0.2 MiB/s  남은 시간 약 29초   \r진행  58.6%  0.2 MiB/s  남은 시간 약 29초   \r진행  58.6%  0.2 MiB/s  남은 시간 약 29초   \r진행  58.6%  0.2 MiB/s  남은 시간 약 29초   \r진행  58.7%  0.2 MiB/s  남은 시간 약 29초   \r진행  58.7%  0.2 MiB/s  남은 시간 약 29초   \r진행  58.7%  0.2 MiB/s  남은 시간 약 30초   \r진행  58.9%  0.2 MiB/s  남은 시간 약 29초   \r진행  59.9%  0.2 MiB/s  남은 시간 약 28초   \r진행  60.7%  0.2 MiB/s  남은 시간 약 28초   \r진행  61.8%  0.2 MiB/s  남은 시간 약 27초   \r진행  63.6%  0.2 MiB/s  남은 시간 약 25초   \r진행  63.6%  0.2 MiB/s  남은 시간 약 25초   \r진행  63.6%  0.2 MiB/s  남은 시간 약 25초   \r진행  63.6%  0.2 MiB/s  남은 시간 약 25초   \r진행  63.7%  0.2 MiB/s  남은 시간 약 25초   \r진행  63.7%  0.2 MiB/s  남은 시간 약 25초   \r진행  64.0%  0.2 MiB/s  남은 시간 약 25초   \r진행  64.0%  0.2 MiB/s  남은 시간 약 25초   \r진행  65.4%  0.2 MiB/s  남은 시간 약 24초   \r진행  67.6%  0.2 MiB/s  남은 시간 약 22초   \r진행  69.3%  0.2 MiB/s  남은 시간 약 20초   \r진행  70.1%  0.2 MiB/s  남은 시간 약 20초   \r진행  70.1%  0.2 MiB/s  남은 시간 약 20초   \r진행  70.2%  0.2 MiB/s  남은 시간 약 20초   \r진행  70.2%  0.2 MiB/s  남은 시간 약 20초   \r진행  70.2%  0.2 MiB/s  남은 시간 약 20초   \r진행  70.4%  0.2 MiB/s  남은 시간 약 20초   \r진행  70.4%  0.2 MiB/s  남은 시간 약 20초   \r진행  70.5%  0.2 MiB/s  남은 시간 약 20초   \r진행  70.5%  0.2 MiB/s  남은 시간 약 20초   \r진행  70.7%  0.2 MiB/s  남은 시간 약 20초   \r진행  70.7%  0.2 MiB/s  남은 시간 약 20초   \r진행  72.3%  0.2 MiB/s  남은 시간 약 19초   \r진행  73.2%  0.2 MiB/s  남은 시간 약 18초   \r진행  74.2%  0.2 MiB/s  남은 시간 약 17초   \r진행  76.0%  0.2 MiB/s  남은 시간 약 16초   \r진행  76.9%  0.2 MiB/s  남은 시간 약 15초   \r진행  76.9%  0.2 MiB/s  남은 시간 약 15초   \r진행  76.9%  0.2 MiB/s  남은 시간 약 15초   \r진행  77.2%  0.2 MiB/s  남은 시간 약 15초   \r진행  77.2%  0.2 MiB/s  남은 시간 약 15초   \r진행  77.3%  0.2 MiB/s  남은 시간 약 15초   \r진행  77.5%  0.2 MiB/s  남은 시간 약 15초   \r진행  77.7%  0.2 MiB/s  남은 시간 약 15초   \r진행  78.5%  0.2 MiB/s  남은 시간 약 14초   \r진행  80.5%  0.2 MiB/s  남은 시간 약 13초   \r진행  81.7%  0.2 MiB/s  남은 시간 약 12초   \r진행  81.8%  0.2 MiB/s  남은 시간 약 12초   \r진행  82.0%  0.2 MiB/s  남은 시간 약 12초   \r진행  83.4%  0.2 MiB/s  남은 시간 약 11초   \r진행  85.5%  0.2 MiB/s  남은 시간 약 9초   \r진행  87.4%  0.2 MiB/s  남은 시간 약 8초   \r진행  88.2%  0.2 MiB/s  남은 시간 약 7초   \r진행  90.2%  0.2 MiB/s  남은 시간 약 6초   \r진행  91.8%  0.2 MiB/s  남은 시간 약 5초   \r진행  93.2%  0.2 MiB/s  남은 시간 약 4초   \r진행  94.8%  0.2 MiB/s  남은 시간 약 3초   \r진행  96.3%  0.2 MiB/s  남은 시간 약 2초   \r진행  97.7%  0.2 MiB/s  남은 시간 약 1초   \r진행  99.1%  0.2 MiB/s  남은 시간 약 1초   "
+  },
+  {
+    "args": [
+      "x",
+      "LZMA-on.7z",
+      "-o",
+      "out-LZMA-on",
+      "--no-profile"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 503.69400007184595,
+    "stdout": "\r\n검증 완료: 203470 bytes, T_call=472.96 ms, T_engine=7.21 ms, W=4 K=4\r\n",
+    "stderr": "\r진행 100.0%  0.8 MiB/s  남은 시간 약 0초   "
+  },
+  {
+    "args": [
+      "test",
+      "LZMA-on.7z"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 33.007899997755885,
+    "stdout": "\r\n검증 완료: 203470 bytes, T_call=5.44 ms, T_engine=0.00 ms, W=4 K=4\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "x",
+      "truncated-LZMA-on.7z",
+      "-o",
+      "truncated-output-LZMA-on"
+    ],
+    "exit_code": 4,
+    "t_process_ms": 38.68160001002252,
+    "stdout": "",
+    "stderr": "\r\n작업 실패: verify: archive open failed: damaged, encrypted headers, or missing volume (password/multivolume unsupported)\r\n"
+  },
+  {
+    "args": [
+      "x",
+      "LZMA-off.7z",
+      "-o",
+      "out-LZMA-off",
+      "--no-profile"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 379.7894000308588,
+    "stdout": "\r\n검증 완료: 203470 bytes, T_call=353.80 ms, T_engine=346.70 ms, W=4 K=4\r\n",
+    "stderr": "\r진행   0.0%  0.0 MiB/s  남은 시간 약 0초   "
+  },
+  {
+    "args": [
+      "test",
+      "LZMA-off.7z"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 31.733499956317246,
+    "stdout": "\r\n검증 완료: 203470 bytes, T_call=5.17 ms, T_engine=0.00 ms, W=4 K=4\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "x",
+      "truncated-LZMA-off.7z",
+      "-o",
+      "truncated-output-LZMA-off"
+    ],
+    "exit_code": 4,
+    "t_process_ms": 38.02269999869168,
+    "stdout": "",
+    "stderr": "\r\n작업 실패: verify: archive open failed: damaged, encrypted headers, or missing volume (password/multivolume unsupported)\r\n"
+  },
+  {
+    "args": [
+      "x",
+      "LZMA2-on.7z",
+      "-o",
+      "out-LZMA2-on",
+      "--no-profile"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 43.1457000086084,
+    "stdout": "\r\n검증 완료: 203470 bytes, T_call=15.13 ms, T_engine=6.45 ms, W=4 K=4\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "test",
+      "LZMA2-on.7z"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 30.63940000720322,
+    "stdout": "\r\n검증 완료: 203470 bytes, T_call=3.97 ms, T_engine=0.00 ms, W=4 K=4\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "x",
+      "truncated-LZMA2-on.7z",
+      "-o",
+      "truncated-output-LZMA2-on"
+    ],
+    "exit_code": 4,
+    "t_process_ms": 35.099799977615476,
+    "stdout": "",
+    "stderr": "\r\n작업 실패: verify: archive open failed: damaged, encrypted headers, or missing volume (password/multivolume unsupported)\r\n"
+  },
+  {
+    "args": [
+      "x",
+      "LZMA2-off.7z",
+      "-o",
+      "out-LZMA2-off",
+      "--no-profile"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 377.4258999619633,
+    "stdout": "\r\n검증 완료: 203470 bytes, T_call=351.80 ms, T_engine=159.13 ms, W=4 K=4\r\n",
+    "stderr": "\r진행 100.0%  0.8 MiB/s  남은 시간 약 0초   "
+  },
+  {
+    "args": [
+      "test",
+      "LZMA2-off.7z"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 31.37290000449866,
+    "stdout": "\r\n검증 완료: 203470 bytes, T_call=2.78 ms, T_engine=0.00 ms, W=4 K=4\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "x",
+      "truncated-LZMA2-off.7z",
+      "-o",
+      "truncated-output-LZMA2-off"
+    ],
+    "exit_code": 4,
+    "t_process_ms": 46.37019999790937,
+    "stdout": "",
+    "stderr": "\r\n작업 실패: verify: archive open failed: damaged, encrypted headers, or missing volume (password/multivolume unsupported)\r\n"
+  },
+  {
+    "args": [
+      "x",
+      "encrypted.7z",
+      "-o",
+      "encrypted"
+    ],
+    "exit_code": 4,
+    "t_process_ms": 34.48269993532449,
+    "stdout": "",
+    "stderr": "\r\n작업 실패: verify: archive open failed: damaged, encrypted headers, or missing volume (password/multivolume unsupported)\r\n"
+  },
+  {
+    "args": [
+      "x",
+      "rar3-comment-plain.rar",
+      "-o",
+      "out-rar3-comment-plain",
+      "--no-profile"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 201.60150004085153,
+    "stdout": "\r\n검증 완료: 0 bytes, T_call=176.40 ms, T_engine=170.85 ms, W=4 K=4\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "test",
+      "rar3-comment-plain.rar"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 26.675599976442754,
+    "stdout": "\r\n검증 완료: 0 bytes, T_call=2.17 ms, T_engine=0.00 ms, W=4 K=4\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "x",
+      "cut-rar3-comment-plain.rar",
+      "-o",
+      "cut-out-rar3-comment-plain"
+    ],
+    "exit_code": 4,
+    "t_process_ms": 35.97160009667277,
+    "stdout": "",
+    "stderr": "\r\n작업 실패: verify: archive reports header error or warning\r\n"
+  },
+  {
+    "args": [
+      "x",
+      "rar3-solid.rar",
+      "-o",
+      "out-rar3-solid",
+      "--no-profile"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 162.5891999574378,
+    "stdout": "\r\n검증 완료: 4096 bytes, T_call=137.34 ms, T_engine=131.52 ms, W=4 K=4\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "test",
+      "rar3-solid.rar"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 26.801900006830692,
+    "stdout": "\r\n검증 완료: 4096 bytes, T_call=2.29 ms, T_engine=0.00 ms, W=4 K=4\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "x",
+      "cut-rar3-solid.rar",
+      "-o",
+      "cut-out-rar3-solid"
+    ],
+    "exit_code": 4,
+    "t_process_ms": 251.6625999705866,
+    "stdout": "",
+    "stderr": "\r\n작업 실패: verify: archive reports header error or warning\r\n"
+  },
+  {
+    "args": [
+      "x",
+      "rar3-subdirs.rar",
+      "-o",
+      "out-rar3-subdirs",
+      "--no-profile"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 402.70269999746233,
+    "stdout": "\r\n검증 완료: 25 bytes, T_call=376.76 ms, T_engine=157.29 ms, W=4 K=4\r\n",
+    "stderr": "\r진행 100.0%  0.0 MiB/s  남은 시간 약 0초   "
+  },
+  {
+    "args": [
+      "test",
+      "rar3-subdirs.rar"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 38.968399981968105,
+    "stdout": "\r\n검증 완료: 25 bytes, T_call=3.46 ms, T_engine=0.00 ms, W=4 K=4\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "x",
+      "cut-rar3-subdirs.rar",
+      "-o",
+      "cut-out-rar3-subdirs"
+    ],
+    "exit_code": 4,
+    "t_process_ms": 47.440199996344745,
+    "stdout": "",
+    "stderr": "\r\n작업 실패: verify: archive reports header error or warning\r\n"
+  },
+  {
+    "args": [
+      "x",
+      "rar5-solid.rar",
+      "-o",
+      "out-rar5-solid",
+      "--no-profile"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 40.93499993905425,
+    "stdout": "\r\n검증 완료: 4096 bytes, T_call=10.74 ms, T_engine=3.12 ms, W=4 K=4\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "test",
+      "rar5-solid.rar"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 36.670600064098835,
+    "stdout": "\r\n검증 완료: 4096 bytes, T_call=3.87 ms, T_engine=0.00 ms, W=4 K=4\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "x",
+      "cut-rar5-solid.rar",
+      "-o",
+      "cut-out-rar5-solid"
+    ],
+    "exit_code": 4,
+    "t_process_ms": 42.006899951957166,
+    "stdout": "",
+    "stderr": "\r\n작업 실패: verify: archive reports header error or warning\r\n"
+  },
+  {
+    "args": [
+      "x",
+      "test_read_format_rar.rar",
+      "-o",
+      "rar-test_read_format_rar"
+    ],
+    "exit_code": 7,
+    "t_process_ms": 30.199200031347573,
+    "stdout": "",
+    "stderr": "\r\n작업 실패: rejected: POSIX link or special file prohibited\r\n"
+  },
+  {
+    "args": [
+      "x",
+      "test_read_format_rar5_multiple_files.rar",
+      "-o",
+      "out-test_read_format_rar5_multiple_files",
+      "--no-profile"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 237.66710003837943,
+    "stdout": "\r\n검증 완료: 16384 bytes, T_call=211.18 ms, T_engine=203.59 ms, W=4 K=4\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "test",
+      "test_read_format_rar5_multiple_files.rar"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 31.73119993880391,
+    "stdout": "\r\n검증 완료: 16384 bytes, T_call=2.97 ms, T_engine=0.00 ms, W=4 K=4\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "x",
+      "cut-test_read_format_rar5_multiple_files.rar",
+      "-o",
+      "cut-out-test_read_format_rar5_multiple_files"
+    ],
+    "exit_code": 4,
+    "t_process_ms": 460.6252000667155,
+    "stdout": "",
+    "stderr": "\r진행   0.0%  0.0 MiB/s  남은 시간 약 0초   \r\n작업 실패: verify: archive reports header error or warning\r\n"
+  },
+  {
+    "args": [
+      "x",
+      "test_read_format_rar5_solid.rar",
+      "-o",
+      "out-test_read_format_rar5_solid",
+      "--no-profile"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 477.4109000572935,
+    "stdout": "\r\n검증 완료: 25776 bytes, T_call=449.81 ms, T_engine=443.99 ms, W=4 K=4\r\n",
+    "stderr": "\r진행  84.1%  0.1 MiB/s  남은 시간 약 0초   "
+  },
+  {
+    "args": [
+      "test",
+      "test_read_format_rar5_solid.rar"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 28.53110001888126,
+    "stdout": "\r\n검증 완료: 25776 bytes, T_call=2.04 ms, T_engine=0.00 ms, W=4 K=4\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "x",
+      "cut-test_read_format_rar5_solid.rar",
+      "-o",
+      "cut-out-test_read_format_rar5_solid"
+    ],
+    "exit_code": 4,
+    "t_process_ms": 36.60810005385429,
+    "stdout": "",
+    "stderr": "\r\n작업 실패: verify: archive reports header error or warning\r\n"
+  },
+  {
+    "args": [
+      "x",
+      "test_read_format_rar_compress_normal.rar",
+      "-o",
+      "rar-test_read_format_rar_compress_normal"
+    ],
+    "exit_code": 7,
+    "t_process_ms": 28.675699955783784,
+    "stdout": "",
+    "stderr": "\r\n작업 실패: rejected: POSIX link or special file prohibited\r\n"
+  },
+  {
+    "args": [
+      "x",
+      "test_read_format_rar_windows.rar",
+      "-o",
+      "out-test_read_format_rar_windows",
+      "--no-profile"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 123.53270000312477,
+    "stdout": "\r\n검증 완료: 473 bytes, T_call=97.36 ms, T_engine=89.13 ms, W=4 K=4\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "test",
+      "test_read_format_rar_windows.rar"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 28.68989994749427,
+    "stdout": "\r\n검증 완료: 473 bytes, T_call=2.22 ms, T_engine=0.00 ms, W=4 K=4\r\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "x",
+      "cut-test_read_format_rar_windows.rar",
+      "-o",
+      "cut-out-test_read_format_rar_windows"
+    ],
+    "exit_code": 4,
+    "t_process_ms": 39.24479999113828,
+    "stdout": "",
+    "stderr": "\r\n작업 실패: verify: archive reports header error or warning\r\n"
+  },
+  {
+    "args": [
+      "x",
+      "large-zip64.zip",
+      "-o",
+      "out-2GiB plus ZIP64 streaming",
+      "--no-profile",
+      "--stream-mib",
+      "16"
+    ],
+    "exit_code": 0,
+    "t_process_ms": 27307.845199946314,
+    "stdout": "\r\n검증 완료: 2147487744 bytes, T_call=27281.63 ms, T_engine=27273.22 ms, W=4 K=4\r\n",
+    "stderr": "\r진행   0.8%  61.1 MiB/s  남은 시간 약 33초   \r진행   6.6%  261.3 MiB/s  남은 시간 약 7초   \r진행  17.5%  465.5 MiB/s  남은 시간 약 4초   \r진행  18.7%  373.6 MiB/s  남은 시간 약 4초   \r진행  18.8%  301.8 MiB/s  남은 시간 약 6초   \r진행  18.8%  250.7 MiB/s  남은 시간 약 7초   \r진행  18.9%  216.7 MiB/s  남은 시간 약 8초   \r진행  18.9%  188.7 MiB/s  남은 시간 약 9초   \r진행  19.0%  168.7 MiB/s  남은 시간 약 10초   \r진행  19.1%  152.1 MiB/s  남은 시간 약 11초   \r진행  19.1%  138.3 MiB/s  남은 시간 약 12초   \r진행  19.2%  127.4 MiB/s  남은 시간 약 13초   \r진행  19.2%  117.8 MiB/s  남은 시간 약 14초   \r진행  19.3%  109.7 MiB/s  남은 시간 약 15초   \r진행  19.4%  103.1 MiB/s  남은 시간 약 16초   \r진행  19.4%  96.7 MiB/s  남은 시간 약 17초   \r진행  19.5%  91.4 MiB/s  남은 시간 약 18초   \r진행  19.5%  86.2 MiB/s  남은 시간 약 19초   \r진행  19.5%  81.9 MiB/s  남은 시간 약 20초   \r진행  19.5%  77.8 MiB/s  남은 시간 약 21초   \r진행  19.5%  74.1 MiB/s  남은 시간 약 22초   \r진행  19.5%  70.7 MiB/s  남은 시간 약 23초   \r진행  19.5%  67.7 MiB/s  남은 시간 약 24초   \r진행  19.5%  64.9 MiB/s  남은 시간 약 25초   \r진행  19.5%  62.3 MiB/s  남은 시간 약 26초   \r진행  19.5%  59.9 MiB/s  남은 시간 약 28초   \r진행  19.5%  57.7 MiB/s  남은 시간 약 29초   \r진행  19.5%  55.5 MiB/s  남은 시간 약 30초   \r진행  19.5%  53.7 MiB/s  남은 시간 약 31초   \r진행  19.5%  51.8 MiB/s  남은 시간 약 32초   \r진행  19.5%  50.2 MiB/s  남은 시간 약 33초   \r진행  19.5%  48.6 MiB/s  남은 시간 약 34초   \r진행  19.5%  47.1 MiB/s  남은 시간 약 35초   \r진행  19.5%  45.7 MiB/s  남은 시간 약 36초   \r진행  19.5%  44.4 MiB/s  남은 시간 약 37초   \r진행  19.5%  43.2 MiB/s  남은 시간 약 38초   \r진행  19.5%  42.0 MiB/s  남은 시간 약 39초   \r진행  19.5%  40.9 MiB/s  남은 시간 약 40초   \r진행  19.5%  39.9 MiB/s  남은 시간 약 41초   \r진행  19.5%  38.9 MiB/s  남은 시간 약 42초   \r진행  19.5%  37.9 MiB/s  남은 시간 약 43초   \r진행  19.5%  37.0 MiB/s  남은 시간 약 45초   \r진행  19.5%  36.2 MiB/s  남은 시간 약 46초   \r진행  19.5%  35.3 MiB/s  남은 시간 약 47초   \r진행  19.5%  34.5 MiB/s  남은 시간 약 48초   \r진행  19.5%  33.8 MiB/s  남은 시간 약 49초   \r진행  19.5%  33.1 MiB/s  남은 시간 약 50초   \r진행  19.5%  32.4 MiB/s  남은 시간 약 51초   \r진행  19.5%  31.7 MiB/s  남은 시간 약 52초   \r진행  19.5%  31.1 MiB/s  남은 시간 약 53초   \r진행  19.5%  30.5 MiB/s  남은 시간 약 54초   \r진행  19.5%  29.9 MiB/s  남은 시간 약 55초   \r진행  19.5%  29.4 MiB/s  남은 시간 약 56초   \r진행  19.5%  28.8 MiB/s  남은 시간 약 57초   \r진행  19.5%  28.3 MiB/s  남은 시간 약 58초   \r진행  19.5%  27.8 MiB/s  남은 시간 약 59초   \r진행  19.5%  27.3 MiB/s  남은 시간 약 60초   \r진행  19.5%  26.8 MiB/s  남은 시간 약 61초   \r진행  19.5%  26.4 MiB/s  남은 시간 약 63초   \r진행  19.5%  25.9 MiB/s  남은 시간 약 64초   \r진행  19.5%  25.5 MiB/s  남은 시간 약 65초   \r진행  19.5%  25.1 MiB/s  남은 시간 약 66초   \r진행  19.5%  24.7 MiB/s  남은 시간 약 67초   \r진행  19.5%  24.3 MiB/s  남은 시간 약 68초   \r진행  19.5%  23.9 MiB/s  남은 시간 약 69초   \r진행  19.5%  23.6 MiB/s  남은 시간 약 70초   \r진행  19.5%  23.2 MiB/s  남은 시간 약 71초   \r진행  19.5%  22.9 MiB/s  남은 시간 약 72초   \r진행  19.5%  22.6 MiB/s  남은 시간 약 73초   \r진행  19.5%  22.2 MiB/s  남은 시간 약 74초   \r진행  19.5%  21.9 MiB/s  남은 시간 약 75초   \r진행  19.5%  21.6 MiB/s  남은 시간 약 76초   \r진행  19.5%  21.3 MiB/s  남은 시간 약 77초   \r진행  19.5%  21.0 MiB/s  남은 시간 약 78초   \r진행  19.5%  20.8 MiB/s  남은 시간 약 79초   \r진행  19.5%  20.5 MiB/s  남은 시간 약 81초   \r진행  19.5%  20.2 MiB/s  남은 시간 약 82초   \r진행  19.5%  20.0 MiB/s  남은 시간 약 83초   \r진행  19.5%  19.7 MiB/s  남은 시간 약 84초   \r진행  19.5%  19.5 MiB/s  남은 시간 약 85초   \r진행  19.5%  19.2 MiB/s  남은 시간 약 86초   \r진행  19.5%  19.0 MiB/s  남은 시간 약 87초   \r진행  19.5%  18.7 MiB/s  남은 시간 약 88초   \r진행  19.5%  18.5 MiB/s  남은 시간 약 89초   \r진행  19.5%  18.3 MiB/s  남은 시간 약 90초   \r진행  19.5%  18.1 MiB/s  남은 시간 약 91초   \r진행  19.5%  17.9 MiB/s  남은 시간 약 92초   \r진행  19.5%  17.7 MiB/s  남은 시간 약 93초   \r진행  19.5%  17.5 MiB/s  남은 시간 약 94초   \r진행  19.5%  17.3 MiB/s  남은 시간 약 95초   \r진행  19.5%  17.1 MiB/s  남은 시간 약 97초   \r진행  19.5%  16.9 MiB/s  남은 시간 약 98초   \r진행  19.5%  16.7 MiB/s  남은 시간 약 99초   \r진행  19.5%  16.5 MiB/s  남은 시간 약 100초   \r진행  19.5%  16.4 MiB/s  남은 시간 약 101초   \r진행  19.5%  16.2 MiB/s  남은 시간 약 102초   \r진행  19.5%  16.0 MiB/s  남은 시간 약 103초   \r진행  19.5%  15.9 MiB/s  남은 시간 약 104초   \r진행  22.5%  18.1 MiB/s  남은 시간 약 88초   \r진행  35.2%  28.1 MiB/s  남은 시간 약 47초   \r진행  44.5%  35.1 MiB/s  남은 시간 약 32초   \r진행  55.6%  43.5 MiB/s  남은 시간 약 21초   \r진행  65.3%  50.6 MiB/s  남은 시간 약 14초   \r진행  76.5%  58.7 MiB/s  남은 시간 약 8초   \r진행  87.8%  66.7 MiB/s  남은 시간 약 4초   \r진행  98.3%  73.9 MiB/s  남은 시간 약 0초   "
+  }
+]

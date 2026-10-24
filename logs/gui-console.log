@@ -1,0 +1,12 @@
+PASS native window created
+PASS native controls initialized
+Control labels: ['���� ���á�', '��ġ ���á�', '���� Ǯ��', '���� Ʃ��', '��ü �˻�', '��� ���� ����', '���']
+PASS Korean controls
+PASS filename open routed through real HDROP handler
+PASS GUI extraction completes
+PASS GUI output bytes correct
+PASS all controls fit actual DPI client area
+Render evidence: 1102 866 PrintWindow 1 rows 866 extrema ((0, 255), (0, 255), (0, 255))
+PASS actual nonblank GUI rendering captured
+PASS GUI streaming cancellation
+PASS GUI exits cleanly

@@ -1,0 +1,98 @@
+[
+  {
+    "tool": "HX-W8K0",
+    "block": -1,
+    "warmup": true,
+    "t_user_ms": 57318.9743,
+    "valid": true,
+    "exit_code": 0,
+    "verification_timed": false,
+    "cache": "warm-uncontrolled",
+    "archive_sha256": "3272ee2552da6a6ec897197def0aeb28e4cbfe24ed8e29a14bcdc107c9cd0067",
+    "stdout": "\r\n검증 완료: 287000000 bytes, T_call=57266.36 ms, T_engine=57130.96 ms, W=8 K=0\r\n"
+  },
+  {
+    "tool": "7-Zip26.05-mmt8",
+    "block": -1,
+    "warmup": true,
+    "t_user_ms": 22032.4592,
+    "valid": true,
+    "exit_code": 0,
+    "verification_timed": false,
+    "cache": "warm-uncontrolled",
+    "archive_sha256": "3272ee2552da6a6ec897197def0aeb28e4cbfe24ed8e29a14bcdc107c9cd0067",
+    "stdout": ""
+  },
+  {
+    "tool": "7-Zip26.05-mmt8",
+    "block": 0,
+    "warmup": false,
+    "t_user_ms": 23263.0906,
+    "valid": true,
+    "exit_code": 0,
+    "verification_timed": false,
+    "cache": "warm-uncontrolled",
+    "archive_sha256": "3272ee2552da6a6ec897197def0aeb28e4cbfe24ed8e29a14bcdc107c9cd0067",
+    "stdout": ""
+  },
+  {
+    "tool": "HX-W8K0",
+    "block": 0,
+    "warmup": false,
+    "t_user_ms": 19813.4785,
+    "valid": true,
+    "exit_code": 0,
+    "verification_timed": false,
+    "cache": "warm-uncontrolled",
+    "archive_sha256": "3272ee2552da6a6ec897197def0aeb28e4cbfe24ed8e29a14bcdc107c9cd0067",
+    "stdout": "\r\n검증 완료: 287000000 bytes, T_call=19728.89 ms, T_engine=19610.70 ms, W=8 K=0\r\n"
+  },
+  {
+    "tool": "7-Zip26.05-mmt8",
+    "block": 1,
+    "warmup": false,
+    "t_user_ms": 23238.1652,
+    "valid": true,
+    "exit_code": 0,
+    "verification_timed": false,
+    "cache": "warm-uncontrolled",
+    "archive_sha256": "3272ee2552da6a6ec897197def0aeb28e4cbfe24ed8e29a14bcdc107c9cd0067",
+    "stdout": ""
+  },
+  {
+    "tool": "HX-W8K0",
+    "block": 1,
+    "warmup": false,
+    "t_user_ms": 16190.2572,
+    "valid": true,
+    "exit_code": 0,
+    "verification_timed": false,
+    "cache": "warm-uncontrolled",
+    "archive_sha256": "3272ee2552da6a6ec897197def0aeb28e4cbfe24ed8e29a14bcdc107c9cd0067",
+    "stdout": "\r\n검증 완료: 287000000 bytes, T_call=16138.54 ms, T_engine=15983.11 ms, W=8 K=0\r\n"
+  },
+  {
+    "tool": "HX-W8K0",
+    "block": 2,
+    "warmup": false,
+    "t_user_ms": 17721.3326,
+    "valid": true,
+    "exit_code": 0,
+    "verification_timed": false,
+    "cache": "warm-uncontrolled",
+    "archive_sha256": "3272ee2552da6a6ec897197def0aeb28e4cbfe24ed8e29a14bcdc107c9cd0067",
+    "stdout": "\r\n검증 완료: 287000000 bytes, T_call=17577.81 ms, T_engine=17036.93 ms, W=8 K=0\r\n"
+  },
+  {
+    "tool": "7-Zip26.05-mmt8",
+    "block": 2,
+    "warmup": false,
+    "t_user_ms": 33225.1022,
+    "valid": true,
+    "exit_code": 0,
+    "verification_timed": false,
+    "cache": "warm-uncontrolled",
+    "archive_sha256": "3272ee2552da6a6ec897197def0aeb28e4cbfe24ed8e29a14bcdc107c9cd0067",
+    "stdout": ""
+  }
+]

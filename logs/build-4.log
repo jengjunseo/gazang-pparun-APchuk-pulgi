@@ -1,0 +1,203 @@
+[1/38] Linking CXX static library libhx_core.a
+[2/38] Linking C static library third_party\libdeflate126\libdeflate.a
+[3/38] Linking C static library third_party\zlib132\libzs.a
+[4/38] Linking CXX static library libhx_output.a
+[5/38] Building CXX object CMakeFiles/hx_autotune.dir/src/autotune/env.cpp.obj
+[6/38] Linking CXX static library libhx_zip.a
+[7/38] Building CXX object CMakeFiles/hx_autotune.dir/src/autotune/trial.cpp.obj
+[8/38] Building CXX object CMakeFiles/hx_autotune.dir/src/autotune/dataset.cpp.obj
+[9/38] Building CXX object CMakeFiles/hx_autotune.dir/src/autotune/tuner.cpp.obj
+[10/38] Linking CXX static library libhx_autotune.a
+[11/38] Building CXX object CMakeFiles/hx_service.dir/src/core/sdk_archive.cpp.obj
+FAILED: [code=1] CMakeFiles/hx_service.dir/src/core/sdk_archive.cpp.obj 
+<WORKSPACE>\work\hyper-extract\HYPER_EXTRACT_v0.6\tools\zig_cxx.cmd -DNOMINMAX -DUNICODE -DWIN32_LEAN_AND_MEAN -D_LARGEFILE64_SOURCE=1 -D_UNICODE -I<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src -I<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126 -I<BUILD>/third_party/zlib132 -I<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/zlib132 -O3 -DNDEBUG -std=c++20 -Wall -Wextra -MD -MT CMakeFiles/hx_service.dir/src/core/sdk_archive.cpp.obj -MF CMakeFiles\hx_service.dir\src\core\sdk_archive.cpp.obj.d -o CMakeFiles/hx_service.dir/src/core/sdk_archive.cpp.obj -c <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/sdk_archive.cpp
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/sdk_archive.cpp:2:9: warning: 'NOMINMAX' macro redefined [-Wmacro-redefined]
+    2 | #define NOMINMAX
+      |         ^
+<command line>:23:9: note: previous definition is here
+   23 | #define NOMINMAX 1
+      |         ^
+In file included from <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/sdk_archive.cpp:4:
+In file included from <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/IArchive.h:6:
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IProgress.h:16:1: error: expected class name
+   16 | Z7_DECL_IFACE_7ZIP(IProgress, 0, 5)
+      | ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IDecl.h:27:31: note: expanded from macro 'Z7_DECL_IFACE_7ZIP'
+   27 |     Z7_DECL_IFACE_7ZIP_SUB(i, IUnknown, groupId, subId)
+      |                               ^
+In file included from <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/sdk_archive.cpp:4:
+In file included from <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/IArchive.h:7:
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IStream.h:49:1: error: expected class name
+   49 | Z7_IFACE_CONSTR_STREAM(ISequentialInStream, 0x01)
+      | ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IStream.h:19:39: note: expanded from macro 'Z7_IFACE_CONSTR_STREAM'
+   19 |         Z7_IFACE_CONSTR_STREAM_SUB(i, IUnknown, n)
+      |                                       ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IStream.h:70:1: error: expected class name
+   70 | Z7_IFACE_CONSTR_STREAM(ISequentialOutStream, 0x02)
+      | ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IStream.h:19:39: note: expanded from macro 'Z7_IFACE_CONSTR_STREAM'
+   19 |         Z7_IFACE_CONSTR_STREAM_SUB(i, IUnknown, n)
+      |                                       ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IStream.h:109:1: error: expected class name
+  109 | Z7_IFACE_CONSTR_STREAM(IStreamGetSize, 0x06)
+      | ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IStream.h:19:39: note: expanded from macro 'Z7_IFACE_CONSTR_STREAM'
+   19 |         Z7_IFACE_CONSTR_STREAM_SUB(i, IUnknown, n)
+      |                                       ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IStream.h:113:1: error: expected class name
+  113 | Z7_IFACE_CONSTR_STREAM(IOutStreamFinish, 0x07)
+      | ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IStream.h:19:39: note: expanded from macro 'Z7_IFACE_CONSTR_STREAM'
+   19 |         Z7_IFACE_CONSTR_STREAM_SUB(i, IUnknown, n)
+      |                                       ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IStream.h:117:1: error: expected class name
+  117 | Z7_IFACE_CONSTR_STREAM(IStreamGetProps, 0x08)
+      | ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IStream.h:19:39: note: expanded from macro 'Z7_IFACE_CONSTR_STREAM'
+   19 |         Z7_IFACE_CONSTR_STREAM_SUB(i, IUnknown, n)
+      |                                       ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IStream.h:136:1: error: expected class name
+  136 | Z7_IFACE_CONSTR_STREAM(IStreamGetProps2, 0x09)
+      | ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IStream.h:19:39: note: expanded from macro 'Z7_IFACE_CONSTR_STREAM'
+   19 |         Z7_IFACE_CONSTR_STREAM_SUB(i, IUnknown, n)
+      |                                       ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IStream.h:141:1: error: expected class name
+  141 | Z7_IFACE_CONSTR_STREAM(IStreamGetProp, 0x0a)
+      | ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IStream.h:19:39: note: expanded from macro 'Z7_IFACE_CONSTR_STREAM'
+   19 |         Z7_IFACE_CONSTR_STREAM_SUB(i, IUnknown, n)
+      |                                       ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IStream.h:141:1: error: unknown type name 'PROPID'
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IStream.h:19:9: note: expanded from macro 'Z7_IFACE_CONSTR_STREAM'
+   19 |         Z7_IFACE_CONSTR_STREAM_SUB(i, IUnknown, n)
+      |         ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IStream.h:16:5: note: expanded from macro 'Z7_IFACE_CONSTR_STREAM_SUB'
+   16 |   { Z7_IFACE_COM7_PURE(i) };
+      |     ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IDecl.h:63:43: note: expanded from macro 'Z7_IFACE_COM7_PURE'
+   63 | #define Z7_IFACE_COM7_PURE(name)          Z7_IFACEM_ ## name(Z7_COM7F_PURE)
+      |                                           ^
+<scratch space>:34:1: note: expanded from here
+   34 | Z7_IFACEM_IStreamGetProp
+      | ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IStream.h:139:17: note: expanded from macro 'Z7_IFACEM_IStreamGetProp'
+  139 |   x(GetProperty(PROPID propID, PROPVARIANT *value)) \
+      |                 ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IStream.h:141:1: error: unknown type name 'PROPVARIANT'
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IStream.h:19:9: note: expanded from macro 'Z7_IFACE_CONSTR_STREAM'
+   19 |         Z7_IFACE_CONSTR_STREAM_SUB(i, IUnknown, n)
+      |         ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IStream.h:16:5: note: expanded from macro 'Z7_IFACE_CONSTR_STREAM_SUB'
+   16 |   { Z7_IFACE_COM7_PURE(i) };
+      |     ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IDecl.h:63:43: note: expanded from macro 'Z7_IFACE_COM7_PURE'
+   63 | #define Z7_IFACE_COM7_PURE(name)          Z7_IFACEM_ ## name(Z7_COM7F_PURE)
+      |                                           ^
+<scratch space>:34:1: note: expanded from here
+   34 | Z7_IFACEM_IStreamGetProp
+      | ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IStream.h:139:32: note: expanded from macro 'Z7_IFACEM_IStreamGetProp'
+  139 |   x(GetProperty(PROPID propID, PROPVARIANT *value)) \
+      |                                ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IStream.h:207:1: error: expected class name
+  207 | Z7_IFACE_CONSTR_STREAM(IStreamSetRestriction, 0x10)
+      | ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IStream.h:19:39: note: expanded from macro 'Z7_IFACE_CONSTR_STREAM'
+   19 |         Z7_IFACE_CONSTR_STREAM_SUB(i, IUnknown, n)
+      |                                       ^
+In file included from <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/sdk_archive.cpp:4:
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/IArchive.h:181:1: error: expected class name
+  181 | Z7_IFACE_CONSTR_ARCHIVE(IArchiveOpenCallback, 0x10)
+      | ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/IArchive.h:18:34: note: expanded from macro 'Z7_IFACE_CONSTR_ARCHIVE'
+   18 |   Z7_IFACE_CONSTR_ARCHIVE_SUB(i, IUnknown, n)
+      |                                  ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/IArchive.h:260:1: error: expected class name
+  260 | Z7_IFACE_CONSTR_ARCHIVE(IArchiveExtractCallbackMessage2, 0x22)
+      | ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/IArchive.h:18:34: note: expanded from macro 'Z7_IFACE_CONSTR_ARCHIVE'
+   18 |   Z7_IFACE_CONSTR_ARCHIVE_SUB(i, IUnknown, n)
+      |                                  ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/IArchive.h:265:1: error: expected class name
+  265 | Z7_IFACE_CONSTR_ARCHIVE(IArchiveOpenVolumeCallback, 0x30)
+      | ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/IArchive.h:18:34: note: expanded from macro 'Z7_IFACE_CONSTR_ARCHIVE'
+   18 |   Z7_IFACE_CONSTR_ARCHIVE_SUB(i, IUnknown, n)
+      |                                  ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/IArchive.h:265:1: error: unknown type name 'PROPID'
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/IArchive.h:18:3: note: expanded from macro 'Z7_IFACE_CONSTR_ARCHIVE'
+   18 |   Z7_IFACE_CONSTR_ARCHIVE_SUB(i, IUnknown, n)
+      |   ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/IArchive.h:15:5: note: expanded from macro 'Z7_IFACE_CONSTR_ARCHIVE_SUB'
+   15 |   { Z7_IFACE_COM7_PURE(i) };
+      |     ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IDecl.h:63:43: note: expanded from macro 'Z7_IFACE_COM7_PURE'
+   63 | #define Z7_IFACE_COM7_PURE(name)          Z7_IFACEM_ ## name(Z7_COM7F_PURE)
+      |                                           ^
+<scratch space>:50:1: note: expanded from here
+   50 | Z7_IFACEM_IArchiveOpenVolumeCallback
+      | ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/IArchive.h:263:17: note: expanded from macro 'Z7_IFACEM_IArchiveOpenVolumeCallback'
+  263 |   x(GetProperty(PROPID propID, PROPVARIANT *value)) \
+      |                 ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/IArchive.h:265:1: error: unknown type name 'PROPVARIANT'
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/IArchive.h:18:3: note: expanded from macro 'Z7_IFACE_CONSTR_ARCHIVE'
+   18 |   Z7_IFACE_CONSTR_ARCHIVE_SUB(i, IUnknown, n)
+      |   ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/IArchive.h:15:5: note: expanded from macro 'Z7_IFACE_CONSTR_ARCHIVE_SUB'
+   15 |   { Z7_IFACE_COM7_PURE(i) };
+      |     ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/../IDecl.h:63:43: note: expanded from macro 'Z7_IFACE_COM7_PURE'
+   63 | #define Z7_IFACE_COM7_PURE(name)          Z7_IFACEM_ ## name(Z7_COM7F_PURE)
+      |                                           ^
+<scratch space>:50:1: note: expanded from here
+   50 | Z7_IFACEM_IArchiveOpenVolumeCallback
+      | ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/IArchive.h:263:32: note: expanded from macro 'Z7_IFACEM_IArchiveOpenVolumeCallback'
+  263 |   x(GetProperty(PROPID propID, PROPVARIANT *value)) \
+      |                                ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/IArchive.h:270:1: error: expected class name
+  270 | Z7_IFACE_CONSTR_ARCHIVE(IInArchiveGetStream, 0x40)
+      | ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/IArchive.h:18:34: note: expanded from macro 'Z7_IFACE_CONSTR_ARCHIVE'
+   18 |   Z7_IFACE_CONSTR_ARCHIVE_SUB(i, IUnknown, n)
+      |                                  ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/IArchive.h:274:1: error: expected class name
+  274 | Z7_IFACE_CONSTR_ARCHIVE(IArchiveOpenSetSubArchiveName, 0x50)
+      | ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/IArchive.h:18:34: note: expanded from macro 'Z7_IFACE_CONSTR_ARCHIVE'
+   18 |   Z7_IFACE_CONSTR_ARCHIVE_SUB(i, IUnknown, n)
+      |                                  ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/IArchive.h:328:1: error: expected class name
+  328 | Z7_IFACE_CONSTR_ARCHIVE(IInArchive, 0x60)
+      | ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/../../third_party/7zip/CPP/7zip/Archive/IArchive.h:18:34: note: expanded from macro 'Z7_IFACE_CONSTR_ARCHIVE'
+   18 |   Z7_IFACE_CONSTR_ARCHIVE_SUB(i, IUnknown, n)
+      |                                  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.
+[12/38] Building CXX object CMakeFiles/hx_zip_win.dir/src/core/zip/zip_extract_win.cpp.obj
+[13/38] Building CXX object CMakeFiles/hx_service.dir/src/core/archive_service.cpp.obj
+FAILED: [code=1] CMakeFiles/hx_service.dir/src/core/archive_service.cpp.obj 
+<WORKSPACE>\work\hyper-extract\HYPER_EXTRACT_v0.6\tools\zig_cxx.cmd -DNOMINMAX -DUNICODE -DWIN32_LEAN_AND_MEAN -D_LARGEFILE64_SOURCE=1 -D_UNICODE -I<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src -I<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126 -I<BUILD>/third_party/zlib132 -I<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/zlib132 -O3 -DNDEBUG -std=c++20 -Wall -Wextra -MD -MT CMakeFiles/hx_service.dir/src/core/archive_service.cpp.obj -MF CMakeFiles\hx_service.dir\src\core\archive_service.cpp.obj.d -o CMakeFiles/hx_service.dir/src/core/archive_service.cpp.obj -c <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/archive_service.cpp
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/archive_service.cpp:2:9: warning: 'NOMINMAX' macro redefined [-Wmacro-redefined]
+    2 | #define NOMINMAX
+      |         ^
+<command line>:23:9: note: previous definition is here
+   23 | #define NOMINMAX 1
+      |         ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/archive_service.cpp:45:19: error: non-const lvalue reference to type 'reference' (aka 'path') cannot bind to a temporary of type 'reference' (aka 'path')
+   45 |         for(auto& component:parent.relative_path()){
+      |                   ^        ~
+1 warning and 1 error generated.
+[14/38] Building CXX object CMakeFiles/hx_service.dir/src/core/profile.cpp.obj
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/profile.cpp:2:9: warning: 'NOMINMAX' macro redefined [-Wmacro-redefined]
+    2 | #define NOMINMAX
+      |         ^
+<command line>:23:9: note: previous definition is here
+   23 | #define NOMINMAX 1
+      |         ^
+1 warning generated.
+ninja: build stopped: subcommand failed.

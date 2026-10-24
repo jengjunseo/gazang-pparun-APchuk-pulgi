@@ -1,0 +1,342 @@
+[
+  {
+    "name": "CLI --help",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "CLI --version",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "CLI selftest",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "invalid arguments exit 2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "mixed UTF8 deflate",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "list planned names",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "test complete ZIP",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "existing directory protected",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "stored",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "cp949.zip",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "descriptor.zip",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "zip64_local.zip",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "zip64_eocd.zip",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "standard.zip",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "deterministic renamed paths",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "path rejected '../escape'",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "path rejected '/absolute'",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "path rejected 'C:/drive'",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "path rejected '\\\\\\\\server\\\\share'",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "path rejected 'file:ads'",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "path rejected 'a/../../escape'",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "symlink hard failure",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "CRC corruption rollback",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "truncation rollback",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "unsupported method explicit exit 3",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "10104 files",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "generate LZMA-on.7z",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "LZMA-on",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "test LZMA-on.7z",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "truncated LZMA-on.7z",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "generate LZMA-off.7z",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "LZMA-off",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "test LZMA-off.7z",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "truncated LZMA-off.7z",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "generate LZMA2-on.7z",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "LZMA2-on",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "test LZMA2-on.7z",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "truncated LZMA2-on.7z",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "generate LZMA2-off.7z",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "LZMA2-off",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "test LZMA2-off.7z",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "truncated LZMA2-off.7z",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "encrypted 7z rejected without output",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "rar3-comment-plain",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "test rar3-comment-plain.rar",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "truncated rar3-comment-plain.rar",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "rar3-solid",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "test rar3-solid.rar",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "truncated rar3-solid.rar",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "rar3-subdirs",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "test rar3-subdirs.rar",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "truncated rar3-subdirs.rar",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "rar5-solid",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "test rar5-solid.rar",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "truncated rar5-solid.rar",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "RAR link rejection test_read_format_rar.rar",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "test_read_format_rar5_multiple_files",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "test test_read_format_rar5_multiple_files.rar",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "truncated test_read_format_rar5_multiple_files.rar",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "test_read_format_rar5_solid",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "test test_read_format_rar5_solid.rar",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "truncated test_read_format_rar5_solid.rar",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "RAR link rejection test_read_format_rar_compress_normal.rar",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "test_read_format_rar_windows",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "test test_read_format_rar_windows.rar",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "truncated test_read_format_rar_windows.rar",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "2GiB plus ZIP64 streaming",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "no extraction staging leftovers",
+    "passed": true,
+    "detail": ""
+  }
+]

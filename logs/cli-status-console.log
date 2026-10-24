@@ -1,0 +1,38 @@
+[
+  {
+    "name": "x: unsupported signature",
+    "expected": 3,
+    "exit_code": 3,
+    "passed": true
+  },
+  {
+    "name": "x: missing input",
+    "expected": 5,
+    "exit_code": 5,
+    "passed": true
+  },
+  {
+    "name": "list: unsupported signature",
+    "expected": 3,
+    "exit_code": 3,
+    "passed": true
+  },
+  {
+    "name": "list: missing input",
+    "expected": 5,
+    "exit_code": 5,
+    "passed": true
+  },
+  {
+    "name": "test: unsupported signature",
+    "expected": 3,
+    "exit_code": 3,
+    "passed": true
+  },
+  {
+    "name": "test: missing input",
+    "expected": 5,
+    "exit_code": 5,
+    "passed": true
+  }
+]

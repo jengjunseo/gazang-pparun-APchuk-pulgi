@@ -1,0 +1,50 @@
+PASS CLI --help 
+PASS CLI --version 
+PASS CLI selftest 
+PASS invalid arguments exit 2 
+PASS mixed UTF8 deflate 
+PASS list planned names 
+PASS test complete ZIP 
+PASS existing directory protected 
+PASS stored 
+PASS cp949.zip 
+PASS descriptor.zip 
+PASS zip64_local.zip 
+PASS zip64_eocd.zip 
+PASS standard.zip 
+PASS deterministic renamed paths 
+PASS path rejected '../escape' 
+PASS path rejected '/absolute' 
+PASS path rejected 'C:/drive' 
+PASS path rejected '\\\\server\\share' 
+PASS path rejected 'file:ads' 
+PASS path rejected 'a/../../escape' 
+PASS symlink hard failure 
+PASS CRC corruption rollback 
+PASS truncation rollback 
+PASS unsupported method explicit exit 3 
+PASS 10104 files 
+PASS generate LZMA-on.7z 
+PASS LZMA-on 
+PASS test LZMA-on.7z 
+PASS generate LZMA-off.7z 
+PASS LZMA-off 
+PASS test LZMA-off.7z 
+PASS generate LZMA2-on.7z 
+PASS LZMA2-on 
+PASS test LZMA2-on.7z 
+PASS generate LZMA2-off.7z 
+PASS LZMA2-off 
+PASS test LZMA2-off.7z 
+PASS encrypted 7z rejected without output 
+FAIL independent RAR reference test_read_format_rar.rar 
+PASS independent RAR reference test_read_format_rar5_multiple_files.rar 
+PASS test_read_format_rar5_multiple_files 
+PASS test test_read_format_rar5_multiple_files.rar 
+PASS independent RAR reference test_read_format_rar5_solid.rar 
+PASS test_read_format_rar5_solid 
+PASS test test_read_format_rar5_solid.rar 
+FAIL independent RAR reference test_read_format_rar_compress_normal.rar 
+PASS 2GiB plus ZIP64 streaming 
+PASS no extraction staging leftovers 
+RESULT 47 / 49 session <WORKSPACE>\work\validation\hx-e2e-4i1yl5e6

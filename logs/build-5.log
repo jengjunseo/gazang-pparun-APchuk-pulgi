@@ -1,0 +1,29 @@
+[1/26] Linking CXX static library libhx_zip_win.a
+[2/26] Building CXX object CMakeFiles/hx_service.dir/src/core/zip/zip_tune_win.cpp.obj
+FAILED: [code=1] CMakeFiles/hx_service.dir/src/core/zip/zip_tune_win.cpp.obj 
+<WORKSPACE>\work\hyper-extract\HYPER_EXTRACT_v0.6\tools\zig_cxx.cmd -DNOMINMAX -DUNICODE -DWIN32_LEAN_AND_MEAN -D_LARGEFILE64_SOURCE=1 -D_UNICODE -I<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src -I<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126 -I<BUILD>/third_party/zlib132 -I<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/zlib132 -O3 -DNDEBUG -std=c++20 -Wall -Wextra -MD -MT CMakeFiles/hx_service.dir/src/core/zip/zip_tune_win.cpp.obj -MF CMakeFiles\hx_service.dir\src\core\zip\zip_tune_win.cpp.obj.d -o CMakeFiles/hx_service.dir/src/core/zip/zip_tune_win.cpp.obj -c <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/zip/zip_tune_win.cpp
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/zip/zip_tune_win.cpp:184:33: error: use of undeclared identifier 'qpc_now_ns'
+  184 |             uint64_t call_start=qpc_now_ns();
+      |                                 ^~~~~~~~~~
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/zip/zip_tune_win.cpp:186:35: error: use of undeclared identifier 'qpc_now_ns'
+  186 |             double call_ms=double(qpc_now_ns()-call_start)/1e6;
+      |                                   ^~~~~~~~~~
+2 errors generated.
+[3/26] Building CXX object CMakeFiles/hx_service.dir/src/tools/selftest_win.cpp.obj
+[4/26] Building CXX object CMakeFiles/hx_service.dir/src/core/sdk_archive.cpp.obj
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/sdk_archive.cpp:2:9: warning: 'NOMINMAX' macro redefined [-Wmacro-redefined]
+    2 | #define NOMINMAX
+      |         ^
+<command line>:23:9: note: previous definition is here
+   23 | #define NOMINMAX 1
+      |         ^
+1 warning generated.
+[5/26] Building CXX object CMakeFiles/hx_service.dir/src/core/archive_service.cpp.obj
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/archive_service.cpp:2:9: warning: 'NOMINMAX' macro redefined [-Wmacro-redefined]
+    2 | #define NOMINMAX
+      |         ^
+<command line>:23:9: note: previous definition is here
+   23 | #define NOMINMAX 1
+      |         ^
+1 warning generated.
+ninja: build stopped: subcommand failed.

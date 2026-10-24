@@ -1,0 +1,58 @@
+[
+  {
+    "archive": "rar3-comment-plain.rar",
+    "archive_sha256": "224a3f0aacab5cbb140b72dde616280a871589f251b9147bdb55b49651661813",
+    "reference": "RARLAB UnRAR 7.30 beta 1",
+    "reference_sha256": "c4f98e25a824df50f8c80304715f8e6edb9c287225d5d70d423b8b2b12d311cd",
+    "exit_code": 0,
+    "files": 2
+  },
+  {
+    "archive": "rar3-solid.rar",
+    "archive_sha256": "0944932546b994f282cdb3ac724112c312d406b4c1aecfe1eaf9e734e8f96aa2",
+    "reference": "RARLAB UnRAR 7.30 beta 1",
+    "reference_sha256": "c4f98e25a824df50f8c80304715f8e6edb9c287225d5d70d423b8b2b12d311cd",
+    "exit_code": 0,
+    "files": 2
+  },
+  {
+    "archive": "rar3-subdirs.rar",
+    "archive_sha256": "d3d4bd8c90b22fa01c11f460589499de06f9d28e076ec3762eea738c0903e874",
+    "reference": "RARLAB UnRAR 7.30 beta 1",
+    "reference_sha256": "c4f98e25a824df50f8c80304715f8e6edb9c287225d5d70d423b8b2b12d311cd",
+    "exit_code": 0,
+    "files": 4
+  },
+  {
+    "archive": "rar5-solid.rar",
+    "archive_sha256": "d97d23b2edee9a7daa49e45015ea72aa3f162efeb0abaf559740ab797276203b",
+    "reference": "RARLAB UnRAR 7.30 beta 1",
+    "reference_sha256": "c4f98e25a824df50f8c80304715f8e6edb9c287225d5d70d423b8b2b12d311cd",
+    "exit_code": 0,
+    "files": 2
+  },
+  {
+    "archive": "test_read_format_rar5_multiple_files.rar",
+    "archive_sha256": "65305723965a55a89b7e120d54807c6ae30b69532712aa20d3934296799e923b",
+    "reference": "RARLAB UnRAR 7.30 beta 1",
+    "reference_sha256": "c4f98e25a824df50f8c80304715f8e6edb9c287225d5d70d423b8b2b12d311cd",
+    "exit_code": 0,
+    "files": 4
+  },
+  {
+    "archive": "test_read_format_rar5_solid.rar",
+    "archive_sha256": "1149dda288494ab6c954d0e3f2a8831318aaf9c69e7da741729bb0c681f924b5",
+    "reference": "RARLAB UnRAR 7.30 beta 1",
+    "reference_sha256": "c4f98e25a824df50f8c80304715f8e6edb9c287225d5d70d423b8b2b12d311cd",
+    "exit_code": 0,
+    "files": 7
+  },
+  {
+    "archive": "test_read_format_rar_windows.rar",
+    "archive_sha256": "8d689455e9ecd92c19426604e2360b5ef8eb023890fe46aabbe2864260b70fc9",
+    "reference": "RARLAB UnRAR 7.30 beta 1",
+    "reference_sha256": "c4f98e25a824df50f8c80304715f8e6edb9c287225d5d70d423b8b2b12d311cd",
+    "exit_code": 0,
+    "files": 3
+  }
+]

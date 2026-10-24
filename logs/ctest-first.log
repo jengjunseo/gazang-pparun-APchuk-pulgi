@@ -1,0 +1,59 @@
+Test project <BUILD>
+    Start 1: core
+1/7 Test #1: core .............................   Passed    0.06 sec
+    Start 2: pathguard_prop
+2/7 Test #2: pathguard_prop ...................   Passed    0.24 sec
+    Start 3: zip
+3/7 Test #3: zip ..............................   Passed    0.06 sec
+    Start 4: zip_mutation
+4/7 Test #4: zip_mutation .....................   Passed    0.07 sec
+    Start 5: zip_writer
+5/7 Test #5: zip_writer .......................Exit code 0xc0000409
+***Exception:   2.92 sec
+libc++abi: terminating due to uncaught exception of type std::__1::__fs::filesystem::filesystem_error: filesystem error: in remove: �ٸ� ���μ����� ������ ��� ���̱� ������ ���μ����� �׼��� �� �� �����ϴ�. ["<USER>\AppData\Local\Packages\sandbox.{0d8d7bd8-2086-40f9-a48b-f60cb5e22c69}\AC\Temp\hx_v06_writer_test.zip"]
+
+    Start 6: zip_security
+6/7 Test #6: zip_security .....................   Passed    0.06 sec
+    Start 7: windows_selftest
+7/7 Test #7: windows_selftest .................***Failed    0.14 sec
+HYPER EXTRACT selftest
+ERROR: cannot create <BUILD>/selftest-data\hx-selftest-20261024-202017 (win32=3)
+PASS create golden ZIP
+PASS list metadata
+PASS decode-to-null with CRC/size checks
+PASS transactional ZIP W/K extraction
+PASS Korean filename and complete content
+PASS existing output rejected
+PASS transactional ZIP W/K extraction
+PASS Korean filename and complete content
+PASS existing output rejected
+PASS transactional ZIP W/K extraction
+PASS Korean filename and complete content
+PASS existing output rejected
+PASS transactional ZIP W/K extraction
+PASS Korean filename and complete content
+PASS existing output rejected
+PASS transactional ZIP W/K extraction
+PASS Korean filename and complete content
+PASS existing output rejected
+PASS transactional ZIP W/K extraction
+PASS Korean filename and complete content
+PASS existing output rejected
+PASS cancelled extraction status
+PASS cancelled output not published
+FAIL create traversal fixture
+PASS reject traversal
+PASS no path escape or final output
+PASS clean owned selftest session
+Archive selftest: 27 checks, total failures including sink tests=3
+
+
+71% tests passed, 2 tests failed out of 7
+
+Total Test time (real) =   3.83 sec
+
+The following tests FAILED:
+	  5 - zip_writer (Exit code 0xc0000409
+)
+	  7 - windows_selftest (Failed)
+Errors while running CTest

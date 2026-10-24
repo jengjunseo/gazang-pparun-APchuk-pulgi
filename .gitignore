@@ -1,0 +1,9 @@
+build/
+.deps/
+third_party/libdeflate126/
+third_party/zlib132/
+third_party/7zip/
+__pycache__/
+*.pyc
+data/zip-tune-*/
+data/selftest.log

@@ -1,0 +1,8 @@
+[1/4] Building CXX object CMakeFiles/hx_service.dir/src/core/zip/zip_tune_win.cpp.obj
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/zip/zip_tune_win.cpp:40:14: warning: unused function 'localapp' [-Wunused-function]
+   40 | std::wstring localapp(){
+      |              ^~~~~~~~
+1 warning generated.
+[2/4] Linking CXX static library libhx_service.a
+[3/4] Linking CXX executable hx.exe
+[4/4] Linking CXX executable HyperExtractGUI.exe

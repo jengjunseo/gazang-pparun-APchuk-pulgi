@@ -1,0 +1,13 @@
+HYPER EXTRACT ZIP end-to-end AutoTune (Defender and OS settings unchanged)
+Data: synthetic full dataset, no personal files read.
+실측 비용에 따라 4개 후보, 목표 예산 180초 (완전한 반복 블록 단위).
+[ 1] W8 K0: 17510.36 ms [verified]
+[ 2] W1 K0: 17383.67 ms [verified]
+[ 3] W4 K0: 17788.57 ms [verified]
+[ 4] W8 K4: 18040.87 ms [verified]
+[ 5] W8 K0: 16802.73 ms [verified]
+[ 6] W4 K0: 17899.73 ms [verified]
+[ 7] W8 K4: 17181.55 ms [verified]
+[ 8] W1 K0: 26814.76 ms [verified]
+Selected W8 K0 (fastest W8 K0). Profile saved in LocalAppData/HyperExtract.
+Results are in the zip-tune-* folder inside LocalAppData/HyperExtract.

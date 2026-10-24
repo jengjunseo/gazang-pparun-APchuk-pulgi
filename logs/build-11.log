@@ -1,0 +1,16 @@
+[0/1] Re-running CMake...
+-- Configuring done (0.8s)
+-- Generating done (0.1s)
+-- Build files have been written to: <BUILD>
+[1/6] Building CXX object CMakeFiles/hx_service.dir/src/core/sdk_archive.cpp.obj
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/sdk_archive.cpp:2:9: warning: 'NOMINMAX' macro redefined [-Wmacro-redefined]
+    2 | #define NOMINMAX
+      |         ^
+<command line>:23:9: note: previous definition is here
+   23 | #define NOMINMAX 1
+      |         ^
+1 warning generated.
+[2/6] Linking CXX static library libhx_service.a
+[3/6] Generating version.res
+[4/6] Linking CXX executable HyperExtractGUI.exe
+[5/6] Linking CXX executable hx.exe

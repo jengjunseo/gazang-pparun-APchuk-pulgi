@@ -1,0 +1,18 @@
+{
+  "test1.bin": {
+    "size": 4096,
+    "sha256": "7d89f86f9f69d744ffff3fc043e15bf89fc3ffc134ffcbb31d164a99bb8b67b0"
+  },
+  "test2.bin": {
+    "size": 4096,
+    "sha256": "f81e6fceeeab366306b23466bf6bb3aac2875e0906dc20a8652be0696ceb15a2"
+  },
+  "test3.bin": {
+    "size": 4096,
+    "sha256": "5e621f2b6ce8fed758c3df8221f994eda55d1e432c7cc4349c34a30ec2e1c43d"
+  },
+  "test4.bin": {
+    "size": 4096,
+    "sha256": "2627f40180217252956edb9a426e8d3e344adaf89019d3bccbe04f6c3416dcdd"
+  }
+}

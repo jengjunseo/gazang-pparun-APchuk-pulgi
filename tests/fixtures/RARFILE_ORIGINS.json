@@ -1,0 +1,26 @@
+[
+  {
+    "file": "rar3-comment-plain.rar",
+    "url": "https://raw.githubusercontent.com/markokr/rarfile/d2f7df6fc843dae356fd6b0a85971dc36fd6e757/test/files/rar3-comment-plain.rar",
+    "sha256": "224a3f0aacab5cbb140b72dde616280a871589f251b9147bdb55b49651661813",
+    "commit": "d2f7df6fc843dae356fd6b0a85971dc36fd6e757"
+  },
+  {
+    "file": "rar3-solid.rar",
+    "url": "https://raw.githubusercontent.com/markokr/rarfile/d2f7df6fc843dae356fd6b0a85971dc36fd6e757/test/files/rar3-solid.rar",
+    "sha256": "0944932546b994f282cdb3ac724112c312d406b4c1aecfe1eaf9e734e8f96aa2",
+    "commit": "d2f7df6fc843dae356fd6b0a85971dc36fd6e757"
+  },
+  {
+    "file": "rar3-subdirs.rar",
+    "url": "https://raw.githubusercontent.com/markokr/rarfile/d2f7df6fc843dae356fd6b0a85971dc36fd6e757/test/files/rar3-subdirs.rar",
+    "sha256": "d3d4bd8c90b22fa01c11f460589499de06f9d28e076ec3762eea738c0903e874",
+    "commit": "d2f7df6fc843dae356fd6b0a85971dc36fd6e757"
+  },
+  {
+    "file": "rar5-solid.rar",
+    "url": "https://raw.githubusercontent.com/markokr/rarfile/d2f7df6fc843dae356fd6b0a85971dc36fd6e757/test/files/rar5-solid.rar",
+    "sha256": "d97d23b2edee9a7daa49e45015ea72aa3f162efeb0abaf559740ab797276203b",
+    "commit": "d2f7df6fc843dae356fd6b0a85971dc36fd6e757"
+  }
+]

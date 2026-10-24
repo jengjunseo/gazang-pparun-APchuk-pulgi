@@ -1,0 +1,15 @@
+PASS create own junction fixture
+PASS destination junction rejected
+PASS create private permission fixture
+PASS permission failure exits 5 without output
+PASS private fixture ACL restored
+PASS ZIP64 oversized declaration rejected
+PASS invalid profile ignored 0
+PASS invalid profile ignored 1
+PASS invalid profile ignored 2
+PASS invalid profile ignored 3
+PASS invalid profile ignored 4
+PASS invalid profile ignored 5
+PASS rerun preserves unrelated old session
+PASS verified matching profile applied
+PASS changed environment profile ignored

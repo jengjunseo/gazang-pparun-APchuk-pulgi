@@ -1,0 +1,77 @@
+[
+  {
+    "name": "create own junction fixture",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "destination junction rejected",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "create private permission fixture",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "permission failure exits 5 without output",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "private fixture ACL restored",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "ZIP64 oversized declaration rejected",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "invalid profile ignored 0",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "invalid profile ignored 1",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "invalid profile ignored 2",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "invalid profile ignored 3",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "invalid profile ignored 4",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "invalid profile ignored 5",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "rerun preserves unrelated old session",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "verified matching profile applied",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "changed environment profile ignored",
+    "passed": true,
+    "detail": ""
+  }
+]

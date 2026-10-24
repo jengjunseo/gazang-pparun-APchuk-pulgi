@@ -1,0 +1,42 @@
+[
+  {
+    "name": "native window created",
+    "passed": true
+  },
+  {
+    "name": "native controls initialized",
+    "passed": true
+  },
+  {
+    "name": "Korean controls",
+    "passed": true
+  },
+  {
+    "name": "filename open routed through real HDROP handler",
+    "passed": true
+  },
+  {
+    "name": "GUI extraction completes",
+    "passed": true
+  },
+  {
+    "name": "GUI output bytes correct",
+    "passed": true
+  },
+  {
+    "name": "all controls fit actual DPI client area",
+    "passed": true
+  },
+  {
+    "name": "actual nonblank GUI rendering captured",
+    "passed": true
+  },
+  {
+    "name": "GUI streaming cancellation",
+    "passed": true
+  },
+  {
+    "name": "GUI exits cleanly",
+    "passed": true
+  }
+]

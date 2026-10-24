@@ -1,0 +1,53 @@
+[1/22] Building CXX object CMakeFiles/hx_pathguard_prop.dir/tests/test_pathguard_prop.cpp.obj
+[2/22] Building CXX object CMakeFiles/hx_tests.dir/tests/test_core.cpp.obj
+[3/22] Building CXX object CMakeFiles/hx_service.dir/src/tools/archive_selftest.cpp.obj
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/tools/archive_selftest.cpp:2:9: warning: 'NOMINMAX' macro redefined [-Wmacro-redefined]
+    2 | #define NOMINMAX
+      |         ^
+<command line>:23:9: note: previous definition is here
+   23 | #define NOMINMAX 1
+      |         ^
+1 warning generated.
+[4/22] Building CXX object CMakeFiles/hx_service.dir/src/core/zip/zip_tune_win.cpp.obj
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/zip/zip_tune_win.cpp:40:14: warning: unused function 'localapp' [-Wunused-function]
+   40 | std::wstring localapp(){
+      |              ^~~~~~~~
+1 warning generated.
+[5/22] Linking CXX static library libhx_service.a
+[6/22] Building CXX object CMakeFiles/hx-tune.dir/src/tools/hx_tune_main.cpp.obj
+[7/22] Building CXX object CMakeFiles/hx-tune.dir/src/tools/selftest_win.cpp.obj
+[8/22] Building CXX object CMakeFiles/hx_zip_tests.dir/tests/test_zip.cpp.obj
+[9/22] Building CXX object CMakeFiles/hx.dir/src/tools/hx_zip_main.cpp.obj
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/tools/hx_zip_main.cpp:2:9: warning: 'NOMINMAX' macro redefined [-Wmacro-redefined]
+    2 | #define NOMINMAX
+      |         ^
+<command line>:23:9: note: previous definition is here
+   23 | #define NOMINMAX 1
+      |         ^
+1 warning generated.
+[10/22] Building CXX object CMakeFiles/hx_zip_mutation.dir/tests/test_zip_mutation.cpp.obj
+[11/22] Building CXX object CMakeFiles/hx_zip_writer_tests.dir/tests/test_zip_writer.cpp.obj
+[12/22] Building CXX object CMakeFiles/HyperExtractGUI.dir/src/tools/gui_win.cpp.obj
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/tools/gui_win.cpp:2:9: warning: 'NOMINMAX' macro redefined [-Wmacro-redefined]
+    2 | #define NOMINMAX
+      |         ^
+<command line>:23:9: note: previous definition is here
+   23 | #define NOMINMAX 1
+      |         ^
+1 warning generated.
+[13/22] Building CXX object CMakeFiles/hx_zip_security_tests.dir/tests/test_zip_security.cpp.obj
+[14/22] Linking CXX executable hx_tests.exe
+[15/22] Linking CXX executable hx_pathguard_prop.exe
+[16/22] Linking CXX executable hx-tune.exe
+[17/22] Linking CXX executable hx_zip_tests.exe
+[18/22] Linking CXX executable hx_zip_mutation.exe
+[19/22] Linking CXX executable hx_zip_writer_tests.exe
+[20/22] Linking CXX executable hx.exe
+[21/22] Linking CXX executable HyperExtractGUI.exe
+FAILED: [code=1] HyperExtractGUI.exe 
+C:\WINDOWS\system32\cmd.exe /C "cd . && <WORKSPACE>\work\hyper-extract\HYPER_EXTRACT_v0.6\tools\zig_cxx.cmd -O3 -DNDEBUG -mwindows CMakeFiles/HyperExtractGUI.dir/src/tools/gui_win.cpp.obj -o HyperExtractGUI.exe -Wl,--out-implib,libHyperExtractGUI.dll.a -Wl,--major-image-version,0,--minor-image-version,0  libhx_service.a  -lcomdlg32  -lcomctl32  -lgdi32  libhx_zip_win.a  libhx_zip.a  third_party/libdeflate126/libdeflate.a  third_party/zlib132/libzs.a  libhx_autotune.a  libhx_output.a  libhx_core.a  -lshell32  -ladvapi32  -lole32  -loleaut32  -luuid  -lpsapi  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+lld-link: error: undefined symbol: WinMain
+>>> referenced by <WORKSPACE>\work\tools\zig\zig-x86_64-windows-0.17.0\lib\libc\mingw\crt\crtexewin.c:62
+>>>               libmingw32.lib(crtexewin.obj):(main)
+[22/22] Linking CXX executable hx_zip_security_tests.exe
+ninja: build stopped: subcommand failed.

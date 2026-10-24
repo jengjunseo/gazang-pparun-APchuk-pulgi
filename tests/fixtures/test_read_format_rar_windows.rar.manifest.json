@@ -1,0 +1,14 @@
+{
+  "test.txt": {
+    "size": 16,
+    "sha256": "2d45c5f87d1b6cef59a1d67a0ddeea9c75a7df81e5b64d30ecff39199b411bd9"
+  },
+  "testshortcut.lnk": {
+    "size": 441,
+    "sha256": "08b633f146f22534956b11bbc92e85f3f975e2820ecb892f958db5ae7bd7cf1f"
+  },
+  "testdir/test.txt": {
+    "size": 16,
+    "sha256": "2d45c5f87d1b6cef59a1d67a0ddeea9c75a7df81e5b64d30ecff39199b411bd9"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "sub/dir1/file1.txt": {
+    "size": 6,
+    "sha256": "ecdc5536f73bdae8816f0ea40726ef5e9b810d914493075903bb90623d97b1d8"
+  },
+  "sub/dir2/file2.txt": {
+    "size": 6,
+    "sha256": "67ee5478eaadb034ba59944eb977797b49ca6aa8d3574587f36ebcbeeb65f70e"
+  },
+  "sub/with space/long fn.txt": {
+    "size": 8,
+    "sha256": "e708f3c52269d19a8ac86b5934ff9cf2a80c696cb04a66a435e96f9ca44f7c18"
+  },
+  "sub/üȵĩöḋè/file.txt": {
+    "size": 5,
+    "sha256": "8b911a8716b94442f9ca3dff20584048536e4c2f47b8b5bb9096cbd43c3432d5"
+  }
+}

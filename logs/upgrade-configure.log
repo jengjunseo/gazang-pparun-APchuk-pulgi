@@ -1,0 +1,9 @@
+-- Looking for stdarg.h
+-- Looking for stdarg.h - found
+-- Looking for unistd.h
+-- Looking for unistd.h - found
+-- Performing Test HAVE___ATTR__VIS_HIDDEN
+-- Performing Test HAVE___ATTR__VIS_HIDDEN - Success
+-- Configuring done (4.3s)
+-- Generating done (0.1s)
+-- Build files have been written to: <BUILD>

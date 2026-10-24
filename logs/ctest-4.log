@@ -1,0 +1,68 @@
+Test project <BUILD>
+    Start 1: core
+1/7 Test #1: core .............................   Passed    0.03 sec
+    Start 2: pathguard_prop
+2/7 Test #2: pathguard_prop ...................   Passed    0.21 sec
+    Start 3: zip
+3/7 Test #3: zip ..............................   Passed    0.02 sec
+    Start 4: zip_mutation
+4/7 Test #4: zip_mutation .....................   Passed    0.03 sec
+    Start 5: zip_writer
+5/7 Test #5: zip_writer .......................   Passed    3.14 sec
+    Start 6: zip_security
+6/7 Test #6: zip_security .....................   Passed    0.02 sec
+    Start 7: windows_selftest
+7/7 Test #7: windows_selftest .................***Failed    5.81 sec
+HYPER EXTRACT selftest
+  sink contract, closers=0
+  sink contract, closers=3
+  trial smoke (small synthetic datasets)
+    A-synth-mini W4-K0-planned      1644.0 ms ok
+    A-synth-mini W4-K0-lazy          326.2 ms ok
+    A-synth-mini W4-K4-planned       347.9 ms ok
+    A-synth-mini W4-K4-lazy          322.1 ms ok
+    D-synth-mini W4-K0-planned       270.3 ms ok
+    D-synth-mini W4-K0-lazy          289.0 ms ok
+    D-synth-mini W4-K4-planned       267.0 ms ok
+    D-synth-mini W4-K4-lazy          296.4 ms ok
+[selftest-win] 108 checks, 0 failures -> PASS
+PASS create golden ZIP
+PASS list metadata
+PASS decode-to-null with CRC/size checks
+FAIL transactional ZIP W/K extraction
+FAIL Korean filename and complete content
+PASS existing output rejected
+FAIL transactional ZIP W/K extraction
+FAIL Korean filename and complete content
+PASS existing output rejected
+FAIL transactional ZIP W/K extraction
+FAIL Korean filename and complete content
+PASS existing output rejected
+FAIL transactional ZIP W/K extraction
+FAIL Korean filename and complete content
+PASS existing output rejected
+FAIL transactional ZIP W/K extraction
+FAIL Korean filename and complete content
+PASS existing output rejected
+FAIL transactional ZIP W/K extraction
+FAIL Korean filename and complete content
+PASS existing output rejected
+PASS cancelled extraction status
+PASS cancelled output not published
+PASS create streaming cancellation source
+PASS cancel after streaming bytes were written
+PASS mid-stream rollback
+PASS create traversal fixture
+PASS reject traversal
+PASS no path escape or final output
+PASS clean owned selftest session
+Archive selftest: 30 checks, total failures including sink tests=12
+
+
+86% tests passed, 1 tests failed out of 7
+
+Total Test time (real) =  10.98 sec
+
+The following tests FAILED:
+	  7 - windows_selftest (Failed)
+Errors while running CTest

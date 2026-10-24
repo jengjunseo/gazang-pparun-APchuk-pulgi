@@ -1,0 +1,10 @@
+{
+  "stest1.txt": {
+    "size": 2048,
+    "sha256": "2eaebb4c18cdef7f20089f8a2fa3475bc59c2a193f66e2f1513609a4bef13e22"
+  },
+  "stest2.txt": {
+    "size": 2048,
+    "sha256": "2eaebb4c18cdef7f20089f8a2fa3475bc59c2a193f66e2f1513609a4bef13e22"
+  }
+}

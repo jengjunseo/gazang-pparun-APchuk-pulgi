@@ -1,0 +1,28 @@
+[1/14] Building CXX object CMakeFiles/hx_core.dir/src/core/pathguard.cpp.obj
+[2/14] Linking CXX static library libhx_core.a
+[3/14] Building CXX object CMakeFiles/hx_service.dir/src/core/archive_service.cpp.obj
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/archive_service.cpp:2:9: warning: 'NOMINMAX' macro redefined [-Wmacro-redefined]
+    2 | #define NOMINMAX
+      |         ^
+<command line>:23:9: note: previous definition is here
+   23 | #define NOMINMAX 1
+      |         ^
+1 warning generated.
+[4/14] Linking CXX static library libhx_service.a
+[5/14] Linking CXX executable hx_tests.exe
+[6/14] Linking CXX executable hx_pathguard_prop.exe
+[7/14] Linking CXX executable hx-tune.exe
+[8/14] Linking CXX executable hx_zip_tests.exe
+[9/14] Linking CXX executable hx_zip_mutation.exe
+[10/14] Linking CXX executable hx.exe
+[11/14] Linking CXX executable hx_zip_writer_tests.exe
+[12/14] Linking CXX executable hx_zip_security_tests.exe
+[13/14] Building CXX object CMakeFiles/HyperExtractGUI.dir/src/tools/gui_win.cpp.obj
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/tools/gui_win.cpp:2:9: warning: 'NOMINMAX' macro redefined [-Wmacro-redefined]
+    2 | #define NOMINMAX
+      |         ^
+<command line>:23:9: note: previous definition is here
+   23 | #define NOMINMAX 1
+      |         ^
+1 warning generated.
+[14/14] Linking CXX executable HyperExtractGUI.exe

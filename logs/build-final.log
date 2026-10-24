@@ -1,0 +1,15 @@
+[1/8] Building CXX object CMakeFiles/hx_output.dir/src/core/output/win32_sink.cpp.obj
+[2/8] Linking CXX static library libhx_output.a
+[3/8] Linking CXX executable hx-tune.exe
+[4/8] Building CXX object CMakeFiles/hx_zip_win.dir/src/core/zip/zip_extract_win.cpp.obj
+[5/8] Linking CXX static library libhx_zip_win.a
+[6/8] Linking CXX executable HyperExtractGUI.exe
+[7/8] Building CXX object CMakeFiles/hx.dir/src/tools/hx_zip_main.cpp.obj
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/tools/hx_zip_main.cpp:2:9: warning: 'NOMINMAX' macro redefined [-Wmacro-redefined]
+    2 | #define NOMINMAX
+      |         ^
+<command line>:23:9: note: previous definition is here
+   23 | #define NOMINMAX 1
+      |         ^
+1 warning generated.
+[8/8] Linking CXX executable hx.exe

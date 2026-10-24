@@ -1,0 +1,67 @@
+[0/1] Re-running CMake...
+-- Configuring done (0.7s)
+-- Generating done (0.1s)
+-- Build files have been written to: <BUILD>
+[1/20] Building CXX object CMakeFiles/hx_zip.dir/src/core/zip/zip_archive.cpp.obj
+[2/20] Building CXX object CMakeFiles/hx_service.dir/src/tools/selftest_win.cpp.obj
+[3/20] Building CXX object CMakeFiles/hx_core.dir/src/core/pathguard.cpp.obj
+[4/20] Linking CXX static library libhx_core.a
+[5/20] Building CXX object CMakeFiles/hx_service.dir/src/core/archive_service.cpp.obj
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/core/archive_service.cpp:2:9: warning: 'NOMINMAX' macro redefined [-Wmacro-redefined]
+    2 | #define NOMINMAX
+      |         ^
+<command line>:23:9: note: previous definition is here
+   23 | #define NOMINMAX 1
+      |         ^
+1 warning generated.
+[6/20] Linking CXX static library libhx_zip.a
+[7/20] Linking CXX executable hx_tests.exe
+[8/20] Linking CXX executable hx_pathguard_prop.exe
+[9/20] Linking CXX executable hx_zip_tests.exe
+[10/20] Building CXX object CMakeFiles/hx_service.dir/src/tools/archive_selftest.cpp.obj
+FAILED: [code=1] CMakeFiles/hx_service.dir/src/tools/archive_selftest.cpp.obj 
+<WORKSPACE>\work\hyper-extract\HYPER_EXTRACT_v0.6\tools\zig_cxx.cmd -DNOMINMAX -DUNICODE -DWIN32_LEAN_AND_MEAN -D_LARGEFILE64_SOURCE=1 -D_UNICODE -I<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src -I<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/libdeflate126 -I<BUILD>/third_party/zlib132 -I<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/third_party/zlib132 -O3 -DNDEBUG -std=c++20 -Wall -Wextra -MD -MT CMakeFiles/hx_service.dir/src/tools/archive_selftest.cpp.obj -MF CMakeFiles\hx_service.dir\src\tools\archive_selftest.cpp.obj.d -o CMakeFiles/hx_service.dir/src/tools/archive_selftest.cpp.obj -c <WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/tools/archive_selftest.cpp
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/tools/archive_selftest.cpp:2:9: warning: 'NOMINMAX' macro redefined [-Wmacro-redefined]
+    2 | #define NOMINMAX
+      |         ^
+<command line>:23:9: note: previous definition is here
+   23 | #define NOMINMAX 1
+      |         ^
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/tools/archive_selftest.cpp:39:41: error: no matching constructor for initialization of 'std::span<const WriteItem>'
+   39 |         check(zip::make_test_zip(source,{{"large.bin",big,true}}).ok(),"create streaming cancellation source");
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~
+<WORKSPACE>\work\tools\zig\zig-x86_64-windows-0.17.0\lib\libcxx\include/span:452:13: note: candidate constructor not viable: cannot convert initializer list argument to 'const span<const hx::zip::WriteItem>'
+  452 |   constexpr span(const span&) noexcept            = default;
+      |             ^    ~~~~~~~~~~~
+<WORKSPACE>\work\tools\zig\zig-x86_64-windows-0.17.0\lib\libcxx\include/span:469:35: note: candidate constructor [with _Sz = 3] not viable: no known conversion from 'const char[10]' to 'type_identity_t<element_type>' (aka 'const hx::zip::WriteItem') for 1st argument
+  469 |   _LIBCPP_HIDE_FROM_ABI constexpr span(type_identity_t<element_type> (&__arr)[_Sz]) noexcept
+      |                                   ^    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<WORKSPACE>\work\tools\zig\zig-x86_64-windows-0.17.0\lib\libcxx\include/span:473:35: note: candidate template ignored: couldn't infer template argument '_OtherElementType'
+  473 |   _LIBCPP_HIDE_FROM_ABI constexpr span(array<_OtherElementType, _Sz>& __arr) noexcept
+      |                                   ^
+<WORKSPACE>\work\tools\zig\zig-x86_64-windows-0.17.0\lib\libcxx\include/span:478:35: note: candidate template ignored: couldn't infer template argument '_OtherElementType'
+  478 |   _LIBCPP_HIDE_FROM_ABI constexpr span(const array<_OtherElementType, _Sz>& __arr) noexcept
+      |                                   ^
+<WORKSPACE>\work\tools\zig\zig-x86_64-windows-0.17.0\lib\libcxx\include/span:482:35: note: candidate template ignored: couldn't infer template argument '_Range'
+  482 |   _LIBCPP_HIDE_FROM_ABI constexpr span(_Range&& __r) : __data_(ranges::data(__r)), __size_{ranges::size(__r)} {}
+      |                                   ^
+<WORKSPACE>\work\tools\zig\zig-x86_64-windows-0.17.0\lib\libcxx\include/span:485:35: note: candidate template ignored: couldn't infer template argument '_OtherElementType'
+  485 |   _LIBCPP_HIDE_FROM_ABI constexpr span(const span<_OtherElementType, _OtherExtent>& __other) noexcept
+      |                                   ^
+<WORKSPACE>\work\tools\zig\zig-x86_64-windows-0.17.0\lib\libcxx\include/span:444:35: note: candidate constructor not viable: requires 0 arguments, but 1 was provided
+  444 |   _LIBCPP_HIDE_FROM_ABI constexpr span() noexcept : __data_{nullptr}, __size_{0} {}
+      |                                   ^
+<WORKSPACE>\work\tools\zig\zig-x86_64-windows-0.17.0\lib\libcxx\include/span:456:35: note: candidate constructor template not viable: requires 2 arguments, but 1 was provided
+  456 |   _LIBCPP_HIDE_FROM_ABI constexpr span(_It __first, size_type __count)
+      |                                   ^    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<WORKSPACE>\work\tools\zig\zig-x86_64-windows-0.17.0\lib\libcxx\include/span:463:35: note: candidate constructor template not viable: requires 2 arguments, but 1 was provided
+  463 |   _LIBCPP_HIDE_FROM_ABI constexpr span(_It __first, _End __last)
+      |                                   ^    ~~~~~~~~~~~~~~~~~~~~~~~~
+<WORKSPACE>/work/hyper-extract/HYPER_EXTRACT_v0.6/src/tools/../core/zip/zip_writer.h:16:84: note: passing argument to parameter 'entries' here
+   16 | Status make_test_zip(const std::filesystem::path& dest, std::span<const WriteItem> entries);
+      |                                                                                    ^
+1 warning and 1 error generated.
+[11/20] Linking CXX executable hx_zip_mutation.exe
+[12/20] Building CXX object CMakeFiles/hx-tune.dir/src/tools/selftest_win.cpp.obj
+[13/20] Building CXX object CMakeFiles/hx_zip_writer_tests.dir/tests/test_zip_writer.cpp.obj
+ninja: build stopped: subcommand failed.

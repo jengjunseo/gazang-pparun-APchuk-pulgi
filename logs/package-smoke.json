@@ -1,0 +1,38 @@
+[
+  {
+    "name": "all packaged SHA256 values",
+    "passed": true
+  },
+  {
+    "name": "relocated --version",
+    "passed": true,
+    "exit_code": 0,
+    "stdout": "HYPER EXTRACT 0.7.0 Windows x64; libdeflate 1.26; zlib 1.3.2; 7-Zip 26.05\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "relocated integrated selftest",
+    "passed": true,
+    "exit_code": 0,
+    "stdout": "HYPER EXTRACT selftest\r\n  sink contract, closers=0\r\n  sink contract, closers=3\r\n  trial smoke (small synthetic datasets)\r\n    A-synth-mini W4-K0-planned       377.9 ms ok\r\n    A-synth-mini W4-K0-lazy          356.1 ms ok\r\n    A-synth-mini W4-K4-planned       378.5 ms ok\r\n    A-synth-mini W4-K4-lazy          177.1 ms ok\r\n    D-synth-mini W4-K0-planned       820.2 ms ok\r\n    D-synth-mini W4-K0-lazy         1149.9 ms ok\r\n    D-synth-mini W4-K4-planned       707.6 ms ok\r\n    D-synth-mini W4-K4-lazy         1903.8 ms ok\r\n[selftest-win] 108 checks, 0 failures -> PASS\r\nPASS create golden ZIP\r\nPASS list metadata\r\nPASS decode-to-null with CRC/size checks\r\nPASS transactional ZIP W/K extraction\r\nPASS Korean filename and complete content\r\nPASS existing output rejected\r\nPASS transactional ZIP W/K extraction\r\nPASS Korean filename and complete content\r\nPASS existing output rejected\r\nPASS transactional ZIP W/K extraction\r\nPASS Korean filename and complete content\r\nPASS existing output rejected\r\nPASS transactional ZIP W/K extraction\r\nPASS Korean filename and complete content\r\nPASS existing output rejected\r\nPASS transactional ZIP W/K extraction\r\nPASS Korean filename and complete content\r\nPASS existing output rejected\r\nPASS transactional ZIP W/K extraction\r\nPASS Korean filename and complete content\r\nPASS existing output rejected\r\nPASS cancelled extraction status\r\nPASS cancelled output not published\r\nPASS create streaming cancellation source\r\nPASS cancel after streaming bytes were written\r\nPASS mid-stream rollback\r\nPASS create traversal fixture\r\nPASS reject traversal\r\nPASS no path escape or final output\r\nPASS clean owned selftest session\r\nArchive selftest: 30 checks, total failures including sink tests=0\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "relocated ZIP extract",
+    "passed": true,
+    "exit_code": 0,
+    "stdout": "\r\n검증 완료: 16 bytes, T_call=11.11 ms, T_engine=2.57 ms, W=4 K=4\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "adjacent DLL RAR extract",
+    "passed": true,
+    "exit_code": 0,
+    "stdout": "\r\n검증 완료: 4096 bytes, T_call=13.43 ms, T_engine=2.94 ms, W=4 K=4\r\n",
+    "stderr": ""
+  },
+  {
+    "name": "RAR manifest SHA256",
+    "passed": true
+  }
+]
