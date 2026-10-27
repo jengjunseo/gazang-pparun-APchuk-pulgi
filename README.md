@@ -13,3 +13,8 @@ Windows x64용 네이티브 압축 해제 프로그램입니다. ZIP · 7z · RA
 [한국어 사용 안내](README_KO.md) · [검증 범위와 한계](docs/VALIDATION_MATRIX.md) · [보안 설계](docs/SECURITY_REVIEW.md) · [라이선스와 소스](LICENSES.md)
 
 소스 재빌드: **BUILD_WINDOWS_ONE_CLICK.cmd**. 공식 포터블 도구의 버전·SHA256이 고정되어 있습니다. Git 체크아웃의 third_party/vendor-sources.zip은 CMake가 해시 확인 후 자동으로 복원합니다. 배포 체크섬은 다운로드 직후의 파일 기준이며, 빌드·튜닝 후 변경되는 로그·프로파일에는 다시 적용하지 않습니다.
+
+## 남은 검증
+
+- [ ] 추가 Windows PC에서 실행·압축 해제와 실패 경로를 확인한다.
+- [ ] 실행 파일 서명 및 배포 체크섬 검증 절차를 검토한다.
